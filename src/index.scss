@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  &-fluid {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+}
+
+.navbar {
+  background: #0f1545;
+  border-bottom: 0.5px solid ar(--one-fl-colors-brand-secondary800);
+}
+
+.hero-section {
+  background: $brand-dark-gradient;
+  color: #ffffff;
+  min-height: 90vh;
+}
