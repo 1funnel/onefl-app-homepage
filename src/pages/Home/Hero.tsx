@@ -1,27 +1,38 @@
-import { Box } from "@chakra-ui/react";
+import GetStartedBtn from "@/components/GetStartedBtn";
+import { Box, Container, Spacer } from "@chakra-ui/react";
 
 export default function Hero() {
   return (
     <Box className="hero">
-      <div className="max-w-3xl mx-auto">
-        <p className="uppercase tracking-wide text-sm text-orange-400 mb-2">
-          Introducing your all-in-one finance solution
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <Container>
+        <Box className="pre-highlight">
+          Introducing your all-in-one finance solution 🚀
+        </Box>
+        <h1 className="title">
           Simplifying Access to <br />
-          Financial Services with <span className="text-orange-400">Ease</span>.
+          Financial Services with{" "}
+          <Box as="span" color="brand.primary700">
+            Ease.
+          </Box>
         </h1>
-        <p className="text-lg text-gray-300 mb-8">
-          Access your funds in real-time without waiting anytime, anywhere.
+        <p className="description">
+          Access your funds in real-time without waiting anytime, anywhere,{" "}
+          <br />
           Access your funds in real-time without.
         </p>
-        <a
-          href="#"
-          className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition"
-        >
-          Get Started →
-        </a>
-      </div>
+
+        <GetStartedBtn />
+
+        <Spacer />
+
+        <Box className="hero-image">
+          <img
+            src="/images/hero-img.svg"
+            alt="Hero Image"
+            style={{ width: "100%", height: "auto" }}
+          />
+        </Box>
+      </Container>
     </Box>
   );
 }

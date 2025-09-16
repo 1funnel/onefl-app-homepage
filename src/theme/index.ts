@@ -72,8 +72,8 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'brand.secondaryBg',
-        color: 'brand.funnelBlack',
+        // bg: 'brand.secondaryBg',
+        // color: 'brand.funnelBlack',
       },
     },
   },

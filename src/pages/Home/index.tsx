@@ -1,13 +1,33 @@
-import Container from "@/components/Container";
 import Hero from "./Hero";
-import { Box } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
+import TrustedClientele from "./TrustedClientele";
+import ProductIntro from "./ProductIntro";
+import FeatureTabs from "./FeatureTabs";
 
 const Home = () => {
   return (
-    <Box className="hero-section">
-      <Container>
+    <Box className="home">
+      <Box className="section hero-section dark-section">
         <Hero />
-      </Container>
+      </Box>
+
+      <Box className="section trusted-clientele-section dark-section">
+        <Container>
+          <TrustedClientele />
+        </Container>
+      </Box>
+
+      <Box className="section product-intro-section dark-section">
+        <Container>
+          <ProductIntro />
+        </Container>
+      </Box>
+
+      <Box className="section app-features-tab dark-section">
+        <Container>
+          <FeatureTabs />
+        </Container>
+      </Box>
     </Box>
   );
 };

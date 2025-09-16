@@ -77,7 +77,7 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as="nav" spacing={4}>
-              {Links.map((link) => (
+            {Links.map((link) => (
                 <Link
                   key={link}
                   px={2}
