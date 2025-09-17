@@ -1,15 +1,13 @@
-import { MERCHANT_APP_URL } from "@/utils/constants";
 import {
   Box,
   Flex,
   HStack,
   IconButton,
-  Button,
   Link,
   Stack,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Menu, CloseSquare, DirectRight, ArrowRight } from "iconsax-react"; // Iconsax import
+import { Menu, CloseSquare } from "iconsax-react";
 import Container from "./Container";
 import GetStartedBtn from "./GetStartedBtn";
 
@@ -77,7 +75,7 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as="nav" spacing={4}>
-            {Links.map((link) => (
+              {Links.map((link) => (
                 <Link
                   key={link}
                   px={2}

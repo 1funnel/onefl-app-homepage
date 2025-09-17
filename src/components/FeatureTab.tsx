@@ -9,7 +9,6 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import type { Dispatch } from "react";
-import GetStartedBtn from "./GetStartedBtn";
 import { ArrowRight } from "iconsax-react";
 // import type { ReactNode } from "react";
 
