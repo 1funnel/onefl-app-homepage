@@ -7,9 +7,7 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 // import Container from "./Container";
-import { Link } from "react-router-dom";
 import GetStartedBtn from "./GetStartedBtn";
-import { Facebook } from "iconsax-react";
 
 const footerMenu = [
   {
@@ -109,7 +107,7 @@ const Footer = () => {
 
           <GridItem>
             <Box className="app-title">
-              Simplifying Access to {" "}
+              Simplifying Access to {" "}
               <Box as="span" className="special-highlight">
                 Financial
               </Box>{" "}

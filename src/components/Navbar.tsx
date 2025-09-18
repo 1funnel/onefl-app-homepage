@@ -8,7 +8,7 @@ import {
   Stack,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Menu, CloseSquare, HambergerMenu } from "iconsax-react";
+import { HambergerMenu } from "iconsax-react";
 import Container from "./Container";
 import GetStartedBtn from "./GetStartedBtn";
 

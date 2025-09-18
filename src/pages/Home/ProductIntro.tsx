@@ -1,5 +1,5 @@
 import ProductCard from "@/components/ProductCard";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { Bank, Messages, Mobile, Receipt1, SecurityUser } from "iconsax-react";
 import Carousel from "react-multi-carousel";
 
