@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <Box className="hero">
       <Container>
-        <Box className="pre-highlight">
+        <Box className="pre-highlight-card">
           Introducing your all-in-one finance solution 🚀
         </Box>
         <h1 className="title">

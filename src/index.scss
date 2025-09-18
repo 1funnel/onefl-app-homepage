@@ -22,6 +22,10 @@ body {
 }
 .dark-section {
   background: $brand-dark-gradient;
+
+  &-invert {
+    background: $brand-dark-gradient-invert;
+  }
 }
 
 .app-title {
@@ -30,8 +34,46 @@ body {
   line-height: 1;
 }
 
+.link-text {
+  text-decoration: underline;
+  color: var(--one-fl-colors-brand-primary700);
+}
+
 .special-highlight {
   color: var(--one-fl-colors-brand-primary700);
+
+  &-title {
+    color: var(--one-fl-colors-brand-primary600);
+    position: relative;
+    margin-left: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 20px;
+      background-color: var(--one-fl-colors-brand-primary700);
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.pre-highlight-card {
+  border-bottom: 0.5px solid var(--one-fl-colors-brand-secondary800);
+  backdrop-filter: blur(40px);
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  width: max-content;
+  text-align: center;
+  padding: 8px 25px;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .navbar {
@@ -53,18 +95,10 @@ body {
 
   .hero {
     width: 100%;
-  }
 
-  .pre-highlight {
-    border-bottom: 0.5px solid var(--one-fl-colors-brand-secondary800);
-    backdrop-filter: blur(40px);
-
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    width: max-content;
-    text-align: center;
-    padding: 8px 25px;
-    margin: 20px auto;
+    .pre-highlight-card {
+      margin: 20px auto;
+    }
   }
 
   .title {
@@ -134,7 +168,7 @@ body {
   }
 
   .product-item {
-    border: 1px solid var(--one-fl-colors-brand-secondary900);
+    border: 1px solid var(--one-fl-colors-brand-secondary700);
     padding: 30px;
     border-radius: 20px;
     display: flex;
@@ -151,11 +185,6 @@ body {
 }
 
 .app-features-tab {
-  * {
-    transition: all 0.3s ease-in-out;
-    user-select: none;
-  }
-
   .gradient-title {
     color: linear-gradient(0deg, rgba(255, 255, 255, 0.46) 0%, #ffffff 100%),
       linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -169,6 +198,11 @@ body {
     padding-left: 40px;
 
     .featured-tab {
+      * {
+        transition: all 0.3s ease-in-out;
+        user-select: none;
+      }
+
       .content {
         display: flex;
         flex-direction: column;
@@ -192,5 +226,169 @@ body {
         width: fit-content;
       }
     }
+  }
+}
+
+.testimonials-section {
+  .special-highlight-title {
+    margin-bottom: 20px;
+  }
+
+  .gradient-title {
+    margin-bottom: 30px;
+  }
+
+  .testimonial-slides {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    border: 1px solid var(--one-fl-colors-brand-secondary700);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 300px;
+
+    .logo {
+      margin-bottom: 40px;
+    }
+    .feedback {
+      margin-bottom: 30px;
+    }
+    .bio-profile {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        margin-right: 20px;
+      }
+
+      .bio-brief {
+        .name {
+          font-weight: 600;
+        }
+        .designation {
+          font-size: 15px;
+          color: var(--one-fl-colors-brand-neutral600);
+        }
+      }
+    }
+  }
+}
+
+.text-featured-section {
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("/images/cta-banner-bg.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .text-featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    height: 40vh;
+  }
+}
+
+.faqs-section {
+  .faqs {
+    .faq-item {
+      border: none;
+
+      .faq-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .sn {
+          background: var(--one-fl-colors-brand-primary700);
+          border-radius: 5px;
+          width: 30px;
+          height: 30px;
+          font-size: 15px;
+          font-weight: 800;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+        }
+
+        .faq-question {
+          font-weight: bold;
+        }
+      }
+
+      .faq-body {
+        padding-left: 75px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.documentation-section {
+  .pre-highlight-card {
+    margin-bottom: 20px;
+  }
+
+  .app-title {
+    margin-bottom: 20px;
+  }
+}
+
+footer.app-footer {
+  background: $brand-dark-gradient-invert;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .app-title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .menu-header {
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--one-fl-colors-brand-secondary100);
+  }
+
+  .links {
+    font-size: 14px;
+
+    .link {
+      margin-bottom: 3px;
+      color: var(--one-fl-colors-brand-secondary100);
+    }
+  }
+
+  .social-footer {
+    margin: 70px 0;
+  }
+
+  .copyright {
+    margin: 20px 0;
+    font-size: 13px;
+  }
+
+  .post-footer {
+    font-size: 13px;
+    color: var(--one-fl-colors-brand-neutral600);
   }
 }

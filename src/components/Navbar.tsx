@@ -14,7 +14,7 @@ import GetStartedBtn from "./GetStartedBtn";
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const Links: string[] = ["Products", "About", "Contact"];
+  const links: string[] = ["Products", "About", "Contact"];
 
   return (
     <Box color="white" px={4} className="navbar">
@@ -37,7 +37,7 @@ export default function Navbar() {
             display={{ base: "none", md: "flex" }}
             fontWeight="medium"
           >
-            {Links.map((link) => (
+            {links.map((link) => (
               <Link
                 key={link}
                 px={2}
@@ -75,7 +75,7 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as="nav" spacing={4}>
-              {Links.map((link) => (
+              {links.map((link) => (
                 <Link
                   key={link}
                   px={2}
