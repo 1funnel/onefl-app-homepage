@@ -129,7 +129,7 @@ const Footer = () => {
             </Flex>
           </GridItem>
 
-          <GridItem alignItems="center" justifyItems="flex-end">
+          <GridItem alignItems="center" justifyItems={{ base: "unset", sm: "flex-end"}}>
             <Flex gap="15px">
               <Image src="/images/facebook.svg" alt="facebook icon" />
               <Image src="/images/linkedin.svg" alt="linkedin icon" />

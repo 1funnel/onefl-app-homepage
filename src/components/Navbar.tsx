@@ -3,11 +3,12 @@ import {
   Flex,
   HStack,
   IconButton,
+  Image,
   Link,
   Stack,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Menu, CloseSquare } from "iconsax-react";
+import { Menu, CloseSquare, HambergerMenu } from "iconsax-react";
 import Container from "./Container";
 import GetStartedBtn from "./GetStartedBtn";
 
@@ -49,25 +50,28 @@ export default function Navbar() {
                 {link}
               </Link>
             ))}
-          </HStack>
 
-          <GetStartedBtn />
+            <GetStartedBtn />
+          </HStack>
 
           {/* Mobile Hamburger with Iconsax */}
           <IconButton
             size="md"
+            background="transparent"
             icon={
               isOpen ? (
-                <CloseSquare size="24" color="#fff" />
+                <HambergerMenu color="red" size="30px" />
               ) : (
-                <Menu size="24" color="#fff" />
+                <Image
+                  src="/images/hamburger.svg"
+                  width="40px"
+                  alt="hamburger icon"
+                />
               )
             }
-            aria-label="Open Menu"
+            aria-label="Open menu"
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
-            bg="transparent"
-            _hover={{ bg: "transparent" }}
           />
         </Flex>
 
@@ -81,7 +85,6 @@ export default function Navbar() {
                   px={2}
                   py={1}
                   rounded="md"
-                  _hover={{ color: "brand.primary400" }}
                   href={`#${link.toLowerCase()}`}
                 >
                   {link}

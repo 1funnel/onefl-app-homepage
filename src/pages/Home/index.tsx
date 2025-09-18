@@ -7,6 +7,7 @@ import Testimonials from "./Testimonials";
 import TextFeatured from "./TextFeatured";
 import Faqs from "@/components/Faqs";
 import DocumentationCard from "@/components/DocumentationCard";
+import "react-multi-carousel/lib/styles.css";
 
 const Home = () => {
   return (
