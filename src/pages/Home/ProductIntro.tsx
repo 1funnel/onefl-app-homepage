@@ -1,34 +1,36 @@
 import ProductCard from "@/components/ProductCard";
-import { Box } from "@chakra-ui/react";
-import { Bank, Messages, Mobile, Receipt1, SecurityUser } from "iconsax-react";
+import { Box, Button } from "@chakra-ui/react";
+import { Bank, Messages, Mobile, Receipt1, SecurityUser, ArrowRight } from "iconsax-react";
 import Carousel from "react-multi-carousel";
+import { DOCUMENTATION_URL } from "@/utils/constants";
+
 
 const productsBrief = [
   {
     title: "Airtime & Data",
     description:
-      "Easily buy and distribute bulk airtime and data at a low cost.",
+      "Deliver instantly across all networks.",
     icon: Mobile,
   },
   {
     title: "SMS/USSD",
-    description: "Boost engagement with our SMS or USSD service.",
+    description: "Uninterrupted communication with customers in real time.",
     icon: Messages,
   },
   {
     title: "KYC Verification",
-    description: "Verify customer identity in seconds with our robust service.",
+    description: "Validate BVN, NIN, and user identities instantly.",
     icon: SecurityUser,
   },
   {
-    title: "Bank Transfer",
+    title: "Unified Dashboard",
     description:
-      "Easily integrate with all banks and Financial institutions in Nigeria.",
+      "Manage, monitor and analyze services from one dashboard.",
     icon: Bank,
   },
   {
-    title: "Bill Payment",
-    description: "Consolidate your bill payment processes under one roof.",
+    title: "Bill Payments",
+    description: "Easy access to all service providers.",
     icon: Receipt1,
   },
 ];
@@ -58,26 +60,50 @@ const ProductIntro = () => {
   return (
     <Box className="product-intro">
       <Box className="context">
-        <Box className="app-title" marginBottom="10px">
-          One Platform,
-          <br /> Endless,{" "}
+        <Box className="app-title" marginBottom="20px">
+          One Integration,
+          <br /> Multiple{" "}
           <Box as="span" className="special-highlight">
-            Possibilities
+            Services
           </Box>
         </Box>
 
         <Box width={{ base: "100%", sm: "40%" }}>
-          One Funnel aggregates essential services for banks and fintech
-          companies, streamlining operations and enhancingcustomer experience.
+          One Funnel is a unified fintech infrastructure that connects your business to multiple services via a single integration.
+           Optimize your backend with our simplified stack for growth and scale,  innovation, and impeccable service to your customers.
         </Box>
+
+        <Button
+          my={10}
+          bg="brand.primary700"
+          color="white"
+          _hover={{ bg: "brand.primary600" }}
+          rounded="full"
+          as="a"
+          href={DOCUMENTATION_URL}
+          target="_blank"
+          size="lg"
+        >
+          <Box marginRight="10px">Explore our APIs now</Box>
+          <ArrowRight size={20} variant="TwoTone" color="white" />
+        </Button>
       </Box>
 
-      <Box className="product-briefs" gap="40px">
-        <Carousel responsive={responsive} partialVisible arrows={false}>
-          {productsBrief.map((product) => {
-            return <ProductCard product={product} key={product.title} />;
-          })}
-        </Carousel>
+      <Box>
+        <Box className="app-title" margin="30px 0">
+          One Platform,
+          <br /> Zero{" "}
+          <Box as="span" className="special-highlight">
+            Complexities
+          </Box>
+        </Box>
+        <Box className="product-briefs" gap="40px">
+          <Carousel responsive={responsive} partialVisible arrows={false}>
+            {productsBrief.map((product) => {
+              return <ProductCard product={product} key={product.title} />;
+            })}
+          </Carousel>
+        </Box>
       </Box>
     </Box>
   );

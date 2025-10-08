@@ -13,7 +13,7 @@ const GetStartedBtn = () => {
       href={MERCHANT_APP_URL}
       size="lg"
     >
-      <Box marginRight="10px">Get Started</Box>
+      <Box marginRight="10px">Get Started Now</Box>
       <ArrowRight size={20} variant="TwoTone" color="white" />
     </Button>
   );

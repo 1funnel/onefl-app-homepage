@@ -9,16 +9,14 @@ export default function Hero() {
           Introducing your all-in-one finance solution 🚀
         </Box>
         <h1 className="title">
-          Simplifying Access to <br />
-          Financial Services with{" "}
-          <Box as="span" color="brand.primary700">
-            Ease.
-          </Box>
+          One Platform, Endless Possibilities for Banks and Fintechs 
         </h1>
         <p className="description">
-          Access your funds in real-time without waiting anytime, anywhere,{" "}
-          <br />
-          Access your funds in real-time without.
+          Skip the hassle of managing multiple APIs.
+          <br/>
+          One Funnel unifies everything
+          in real time, from KYC to different messaging options, detailed reporting,
+          BVN validation & NIN verification, and more. A trial is all you need.
         </p>
 
         <GetStartedBtn />

@@ -65,7 +65,7 @@ const footerMenu = [
     header: "Contact",
     links: [
       {
-        title: "Support +2349057468624",
+        title: "Support",
         href: "tel:2349057468624",
       },
       {
@@ -107,13 +107,13 @@ const Footer = () => {
 
           <GridItem>
             <Box className="app-title">
-              Simplifying Access to {" "}
+              One {" "}
               <Box as="span" className="special-highlight">
-                Financial
+                Integration
               </Box>{" "}
-              Services with{" "}
+              Endless{" "}
               <Box as="span" className="special-highlight">
-                ease.
+                Possibilities 
               </Box>
             </Box>
           </GridItem>
@@ -122,7 +122,7 @@ const Footer = () => {
         <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px" className="social-footer">
           <GridItem alignItems="center">
             <Flex gap="20px" align="center">
-              <Box>Try us out</Box>
+              <Box>Try it out</Box>
               <GetStartedBtn />
             </Flex>
           </GridItem>
@@ -143,13 +143,11 @@ const Footer = () => {
         </Box>
 
         <Box className="post-footer">
-          We use cookies and similar technologies to enhance your interactions
-          with our website and Services, including when you reach out to us on
-          chat. This comprises traffic analysis, delivering personalized
-          content, and supporting our marketing efforts. By accessing our
-          website, interacting with our Services, you agree to let us and our
-          partners employ cookies and related technologies on your computer or
-          devices.
+          We use cookies and similar technologies to enhance your interactions with our website and services,
+          including when you reach out to us on chat. This comprises traffic analysis,
+          delivering personalized content, and supporting our marketing efforts.
+          By accessing our website and interacting with our services,
+          you agree to let us and our partners employ cookies and related technologies on your computer or devices.
           <br />
           <br />
           Click the{" "}

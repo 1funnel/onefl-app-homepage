@@ -4,30 +4,30 @@ import { useState } from "react";
 
 const tabs = [
   {
-    title: "Stay Connected Instantly",
+    title: "Launch Faster",
     description:
-      "Top up airtime and data bundles across all networks in just a few taps — keeping your users online whenever they need it most.",
-    cta: "Recharge Now",
+      "Seamless integration with resource support .",
+    cta: "Start Now",
     image: "/images/integrations/airtime.png",
   },
   {
-    title: "Simplify Everyday Bills",
+    title: "Save Costs",
     description:
-      "From electricity to cable TV, empower your users to pay all their household and lifestyle bills in one place, stress-free.",
+      "Consolidate every service with  One Integration.",
     cta: "Pay a Bill",
     image: "/images/integrations/bills.png",
   },
   {
-    title: "Move Money with Confidence",
+    title: "Simplify Operations",
     description:
-      "Enable smooth, secure bank transfers that settle instantly, so your users never have to worry about delays.",
+      "Manage multiple services from one platform.",
     cta: "Send Money",
     image: "/images/integrations/bank-transfer.png",
   },
   {
-    title: "Communicate Without Barriers",
+    title: "99.9% Uptime",
     description:
-      "Integrate SMS and messaging services to deliver alerts, confirmations, and updates that keep users informed in real-time.",
+      "Reliable network uptime and APIs built for scale and performance.",
     cta: "Enable Messaging",
     image: "/images/integrations/sms.png",
   },
@@ -39,13 +39,18 @@ const FeatureTabs = () => {
   return (
     <Box className="feature-tabs">
       <Box className="gradient-title" width={{ base: "100%", sm: "40%" }}>
-        One platform to connect to all of your users' external apps
+        <p>Why Choose One Funnel?</p>
+        <Box className="content-header" >
+          Designed to Support Business Growth and Scale       
+        </Box>
       </Box>
+
+      
 
       <Box className="tabs-wrapper">
         {tabs.map((tab, index) => (
           <FeatureTab
-            tab={tab}
+            tab={{...tab, title: `• ${tab.title}`}}
             key={tab.title}
             tabIndex={index}
             selected={index === selectedIndex}
