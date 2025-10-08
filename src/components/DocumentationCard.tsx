@@ -9,18 +9,15 @@ const DocumentationCard = () => {
         <GridItem>
           <Box className="brief">
             <Box className="pre-highlight-card">
-              Introducing Your All In One Service Provider 🚀
+              Access Multiple Services with One Smart API connection 🚀
             </Box>
 
             <Box className="app-title gradient-text">
-              Simplifying Access to, Financial Services with{" "}
-              <Box as="span" className="special-highlight">Ease.</Box>
+              All in one solution
             </Box>
 
             <Box className="content" marginBottom="100px">
-              Access your funds in real-time without waiting anytime, anywhere,
-              <br />
-              Access your funds in real-time without.
+              Streamline operations, manage costs, and improve speed via a trusted infrastructure built for scale.
             </Box>
 
             <Button

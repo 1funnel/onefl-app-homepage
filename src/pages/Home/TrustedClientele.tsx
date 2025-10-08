@@ -9,8 +9,11 @@ const TrustedClientele = () => {
   return (
     <>
       <Box className="trusted-by">
-        <Box className="content">
-          Trusted by leading B2B <br /> SaaS engineering teams globally
+        <Box className="content" >
+          <span className="content-header"> Leading financial institutions in Africa.</span>
+          <br />The guarantee for a smooth end-to-end experience; 
+          seamless integration, streamlined operations, uninterrupted uptime, and a rail for growth and scale.
+
         </Box>
       </Box>
       <Flex className="clientele-list" align="center" justifyContent="space-around">
