@@ -11,13 +11,13 @@ export default function Hero() {
         <h1 className="title">
           One Platform, Endless Possibilities for Banks and Fintechs 
         </h1>
-        <p className="description">
+        <Box className="description">
           Skip the hassle of managing multiple APIs.
           <br/>
           One Funnel unifies everything
           in real time, from KYC to different messaging options, detailed reporting,
           BVN validation & NIN verification, and more. A trial is all you need.
-        </p>
+        </Box>
 
         <GetStartedBtn />
 
