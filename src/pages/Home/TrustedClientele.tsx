@@ -10,7 +10,7 @@ const TrustedClientele = () => {
     <>
       <Box className="trusted-by">
         <Box className="content" >
-          <span className="content-header"> Leading financial institutions in Africa.</span>
+          <span className="content-header"> Trusted by leading financial institutions in Africa.</span>
           <br />The guarantee for a smooth end-to-end experience; 
           seamless integration, streamlined operations, uninterrupted uptime, and a rail for growth and scale.
 

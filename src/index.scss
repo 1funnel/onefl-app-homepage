@@ -136,12 +136,12 @@ body {
       z-index: 1;
     }
     .content-header{
-      font-size: 20px;
+      font-size: 25px;
     }
   }
 
   .clientele-list {
-    margin-top: 60px;
+    margin-top: 40px;
 
     .clientele-logo {
       img,
@@ -204,6 +204,10 @@ body {
     font-size: 20px;
     margin-top: 15px;    
   }
+  .tabs-container .featured-tab {
+    margin-bottom: 5px;
+  }
+
 
   .tabs-wrapper {
     border-left: 3px solid var(--one-fl-colors-brand-primary700);
@@ -233,7 +237,7 @@ body {
 
       .cta {
         font-size: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         background-color: var(--one-fl-colors-brand-primary700);
         width: fit-content;
       }

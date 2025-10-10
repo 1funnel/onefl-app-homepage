@@ -9,7 +9,7 @@ const DocumentationCard = () => {
         <GridItem>
           <Box className="brief">
             <Box className="pre-highlight-card">
-              Access Multiple Services with One Smart API connection 🚀
+              Access Multiple Services with One Smart API connection
             </Box>
 
             <Box className="app-title gradient-text">

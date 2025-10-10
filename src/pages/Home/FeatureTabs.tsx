@@ -45,18 +45,21 @@ const FeatureTabs = () => {
         </Box>
       </Box>
 
-      
-
-      <Box className="tabs-wrapper">
-        {tabs.map((tab, index) => (
-          <FeatureTab
-            tab={{...tab, title: `• ${tab.title}`}}
-            key={tab.title}
-            tabIndex={index}
-            selected={index === selectedIndex}
-            setSelectedIndex={setSelectedIndex}
-          />
-        ))}
+      <Box display="flex" gap={6} alignItems="flex-start">
+        <Box className="tabs-container">
+          <Box className="tabs-wrapper">
+            {tabs.map((tab, index) => (
+              <FeatureTab
+                tab={{...tab, title: `• ${tab.title}`}}
+                key={tab.title}
+                tabIndex={index}
+                selected={index === selectedIndex}
+                setSelectedIndex={setSelectedIndex}
+                showCta={index === selectedIndex}
+              />
+            ))}
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
