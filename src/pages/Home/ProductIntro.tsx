@@ -1,5 +1,5 @@
 import ProductCard from "@/components/ProductCard";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, useBreakpointValue } from "@chakra-ui/react";
 import { Bank, Messages, Mobile, Receipt1, SecurityUser, ArrowRight } from "iconsax-react";
 import Carousel from "react-multi-carousel";
 import { DOCUMENTATION_URL } from "@/utils/constants";
@@ -57,6 +57,7 @@ const responsive = {
 };
 
 const ProductIntro = () => {
+  const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 });
   return (
     <Box className="product-intro">
       <Box className="context">
@@ -82,10 +83,12 @@ const ProductIntro = () => {
           as="a"
           href={DOCUMENTATION_URL}
           target="_blank"
-          size="lg"
+          size={{ base: "sm", md: "md", lg: "lg" }}
+          px={{ base: 4, md: 6, lg: 8 }}
+          py={{ base: 2, md: 3, lg: 4 }}
         >
-          <Box marginRight="10px">Explore our APIs now</Box>
-          <ArrowRight size={20} variant="TwoTone" color="white" />
+          <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Explore our APIs now</Box>
+          <ArrowRight size={iconSize} variant="TwoTone" color="white" />
         </Button>
       </Box>
 

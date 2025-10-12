@@ -66,7 +66,7 @@ const footerMenu = [
     links: [
       {
         title: "Support",
-        href: "tel:2349057468624",
+        href: "mailto:support@onefunnel.com",
       },
       {
         title: "Help Center",
@@ -84,42 +84,74 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <Container>
-        <SimpleGrid columns={{ base: 1, sm: 5 }} gap="20px">
-          {footerMenu.map((menu) => {
-            return (
-              <GridItem key={menu.header}>
-                <Box className="menu-header">{menu.header}</Box>
-                <Box className="links">
-                  {menu.links.map((link) => {
-                    return (
-                      <Box
-                        key={`${menu.header}-${link.title}`}
-                        className="link"
-                      >
-                        <a href={link.href}>{link.title}</a>
-                      </Box>
-                    );
-                  })}
+
+    <SimpleGrid
+      columns={{ base: 2, md: 5 }}
+      gap="20px"
+      justifyItems={{ base: "center", md: "flex-start" }}
+      textAlign={{ base: "center", md: "left" }}
+    >
+      {footerMenu.map((menu) => (
+        <GridItem key={menu.header}>
+        <Box className="menu-header">{menu.header}
+            <Box className="links">
+              {menu.links.map((link) => (
+                <Box key={`${menu.header}-${link.title}`} className="link" textTransform="none">
+                  <a href={link.href}>{link.title}</a>
                 </Box>
-              </GridItem>
-            );
-          })}
-
-          <GridItem>
-            <Box className="app-title">
-              One {" "}
-              <Box as="span" className="special-highlight">
-                Integration
-              </Box>{" "}
-              Endless{" "}
-              <Box as="span" className="special-highlight">
-                Possibilities 
-              </Box>
+              ))}
             </Box>
-          </GridItem>
-        </SimpleGrid>
+          </Box>  
+        </GridItem>
+      ))}
 
-        <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px" className="social-footer">
+      {/* one integration.... as last grid column */}
+      <GridItem>
+        <Box
+          className="app-title"
+          display={{ base: "none", md: "block" }}
+        >
+          One{" "}
+          <Box as="span" className="special-highlight">
+            Integration
+          </Box>
+          <br />
+          Endless{" "}
+          <Box as="span" className="special-highlight">
+            Possibilities
+          </Box>
+        </Box>
+      </GridItem>
+    </SimpleGrid>
+   
+    {/* one integrations.... below grid on small screens */}     
+    <Box
+      display={{ base: "block", md: "none" }}
+      textAlign="center"
+      mt={6}
+      px={2}
+    >
+      <Box
+        className="app-title"
+        fontSize={{ base: "1rem", sm: "1.2rem" }}
+     >
+        One{" "}
+        <Box as="span" className="special-highlight">
+          Integration
+        </Box>{" "}
+        <br/>
+        Endless{" "}
+        <Box as="span" className="special-highlight">
+          Possibilities
+        </Box>
+      </Box>
+    </Box>
+
+
+        <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px" className="social-footer"
+          justifyItems={{ base: "center", md: "flex-start" }}
+          textAlign={{ base: "center", md: "left" }}
+        >
           <GridItem alignItems="center">
             <Flex gap="20px" align="center">
               <Box>Try it out</Box>

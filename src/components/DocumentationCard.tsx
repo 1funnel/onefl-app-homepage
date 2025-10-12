@@ -1,8 +1,9 @@
 import { DOCUMENTATION_URL } from "@/utils/constants";
-import { Box, Button, GridItem, Image, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, GridItem, Image, SimpleGrid, useBreakpointValue} from "@chakra-ui/react";
 import { ArrowRight } from "iconsax-react";
 
 const DocumentationCard = () => {
+  const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 }) ?? 18;
   return (
     <Box className="documentation-card">
       <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
@@ -10,13 +11,13 @@ const DocumentationCard = () => {
           <Box className="brief">
             <Box className="pre-highlight-card">
               Access Multiple Services with One Smart API connection
-            </Box>
+            </Box>  
 
             <Box className="app-title gradient-text">
               All in one solution
             </Box>
 
-            <Box className="content" marginBottom="100px">
+            <Box className="content" marginBottom="20px">
               Streamline operations, manage costs, and improve speed via a trusted infrastructure built for scale.
             </Box>
 
@@ -28,10 +29,12 @@ const DocumentationCard = () => {
               as="a"
               href={DOCUMENTATION_URL}
               target="_blank"
-              size="lg"
+              size={{ base: "sm", md: "md", lg: "lg" }}
+              px={{ base: 4, md: 6, lg: 8 }}
+              py={{ base: 2, md: 3, lg: 4 }}
             >
-              <Box marginRight="10px">API Documentation</Box>
-              <ArrowRight size={20} variant="TwoTone" color="white" />
+              <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }} >API Documentation</Box>
+              <ArrowRight size={iconSize} variant="TwoTone" color="white" />
             </Button>
           </Box>
         </GridItem>

@@ -18,7 +18,8 @@ body {
 }
 
 .section {
-  padding: 100px 30px;
+  padding: 100px 20px;
+  padding-top: 60px;
 }
 .dark-section {
   background: $brand-dark-gradient;
@@ -73,7 +74,7 @@ body {
   text-align: center;
   padding: 8px 25px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .navbar {
@@ -105,14 +106,21 @@ body {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.1;
     margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
   }
+  
 
   .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
-
-    margin-bottom: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .hero-image {
@@ -127,28 +135,31 @@ body {
 
   .trusted-by {
     text-align: center;
-    padding: 50px 40px;
+    padding: 50px 10px;
     width: 100%;
     position: relative;
 
     .content {
       position: relative;
       z-index: 1;
+      width: 70%;
+      margin: 0 auto;
     }
     .content-header{
-      font-size: 25px;
+      font-size: 1.7rem;
+      font-weight: 600;
     }
   }
 
   .clientele-list {
-    margin-top: 40px;
+    margin-top: 30px;
 
-    .clientele-logo {
-      img,
-      svg {
-        filter: invert(1);
-      }
-    }
+    // .clientele-logo {
+    //   img,
+    //   svg {
+    //     filter: invert(1);
+    //   }
+    // }
   }
 
   &::after {
@@ -375,6 +386,8 @@ footer.app-footer {
     line-height: 1.1;
   }
 
+  
+
   .menu-header {
     margin-bottom: 10px;
     font-weight: 600;
@@ -416,4 +429,76 @@ footer.app-footer {
   .testimonial-card {
    height: 380px !important;
   }
+
+  .title {
+    font-size: 3rem;
+
+  }  
+}
+
+@media (max-width: 480px) {
+  .hero-section .title {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+  }  
+
+  .hero-section .description {
+     width: 100%;
+     text-align: left;
+  }
+
+  .app-title{
+    font-size: 1rem;
+  }
+
+  .trusted-clientele-section .trusted-by .content-header{
+    font-size: 1.2rem;
+  }
+  .trusted-clientele-section .trusted-by .content{
+    width: 100%;
+    text-align: left;
+  }
+
+  .product-intro-section .product-item {
+    margin-right: 25px;
+    height: 200px;
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .description {
+      font-size: 15px;
+    }
+  }
+
+  .app-features-tab .tabs-wrapper .featured-tab .title {
+    font-size: 15px;
+  }
+
+  .pre-highlight-card {
+    font-size: 12px;
+  }
+
+  .documentation-section .brief {
+    margin-bottom: 10px;
+  }
+
+  .app-footer .app-title{
+    font-size: 15px;
+  }
+  
+ // .app-title .special-highlight {
+//   font-size: inherit; /*
+//   font-weight: 600;   /*
+// }
+
+//  #footer{
+//   font-size: 10px;  
+//  }
+
+
+
+
 }

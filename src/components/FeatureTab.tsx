@@ -1,14 +1,7 @@
-import {
-  Box,
-  Button,
-  Image,
-  SimpleGrid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import type { Dispatch } from "react";
 import { MERCHANT_APP_URL } from "@/utils/constants";
 import { ArrowRight } from "iconsax-react";
-// import type { ReactNode } from "react";
 
 type Tab = {
   title: string;
@@ -35,10 +28,8 @@ const FeatureTab = (props: Props) => {
   return (
     <Box
       className={`featured-tab ${selected ? "selected" : ""}`}
-      onClick={handleClick}
-      
     >
-      {showCta && selected && (
+      {showCta && (
         <Button
           as="a"
           href={MERCHANT_APP_URL}
@@ -50,25 +41,12 @@ const FeatureTab = (props: Props) => {
         </Button>
       )}
 
-      <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
-        <GridItem className="content">
-          <Box className="title">{tab.title}</Box>
-          {selected && (
-            <Box className="description">{tab.description}</Box>
-          )}
-        </GridItem>
-
+      <Box className="content">
+        <Box className="title" cursor="pointer" onClick={handleClick}>{tab.title}</Box>
         {selected && (
-          <GridItem 
-            className="featured-image">
-            <Image
-              src="/images/hero-img.svg"
-              alt={`${tab.title} image`}
-              height="250px"
-            />
-          </GridItem>
+          <Box className="description">{tab.description}</Box>
         )}
-      </SimpleGrid>
+      </Box>
     </Box>
   );
 };
