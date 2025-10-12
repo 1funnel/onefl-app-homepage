@@ -17,8 +17,8 @@ const TestimonialCard = (props: Props) => {
 
   return (
     <Box className="testimonial-card">
-      <Box className="logo">
-        <Image src={testimonial.logo} height="40px" alt="Logo" />
+      <Box className="logo" fontWeight="bold">
+        {testimonial.logo}
       </Box>
       <Box className="feedback">{testimonial.feedback}</Box>
       <Box className="bio-profile">

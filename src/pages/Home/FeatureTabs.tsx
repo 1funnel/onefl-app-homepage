@@ -1,57 +1,106 @@
 import FeatureTab from "@/components/FeatureTab";
-import { Box } from "@chakra-ui/react";
+import { Box, Image, useBreakpointValue } from "@chakra-ui/react";
 import { useState } from "react";
 
 const tabs = [
   {
-    title: "Stay Connected Instantly",
+    title: "Launch Faster",
     description:
-      "Top up airtime and data bundles across all networks in just a few taps — keeping your users online whenever they need it most.",
-    cta: "Recharge Now",
+      "Seamless integration with resource support .",
+    cta: "Start Now",
     image: "/images/integrations/airtime.png",
   },
   {
-    title: "Simplify Everyday Bills",
+    title: "Save Costs",
     description:
-      "From electricity to cable TV, empower your users to pay all their household and lifestyle bills in one place, stress-free.",
-    cta: "Pay a Bill",
+      "Consolidate every service with  One Integration.",
+    cta: "Start Now",
     image: "/images/integrations/bills.png",
   },
   {
-    title: "Move Money with Confidence",
+    title: "Simplify Operations",
     description:
-      "Enable smooth, secure bank transfers that settle instantly, so your users never have to worry about delays.",
-    cta: "Send Money",
+      "Manage multiple services from one platform.",
+    cta: "Start Now",
     image: "/images/integrations/bank-transfer.png",
   },
   {
-    title: "Communicate Without Barriers",
+    title: "99.9% Uptime",
     description:
-      "Integrate SMS and messaging services to deliver alerts, confirmations, and updates that keep users informed in real-time.",
-    cta: "Enable Messaging",
+      "Reliable network uptime and APIs built for scale and performance.",
+    cta: "Start Now",
     image: "/images/integrations/sms.png",
   },
 ];
 
 const FeatureTabs = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
+  
+  // check to see if it's a large screen
+  const isLargeScreen = useBreakpointValue({ base: false, md: true });
+  
+  // hover on large screen and select on small screen
+  const activeIndex = isLargeScreen ? hoveredIndex : selectedIndex;
+
+  const handleClick = (index: number) => {
+    if (!isLargeScreen) {
+      setSelectedIndex(selectedIndex === index ? -1 : index);
+    }
+  };
+
+  const handleHover = (index: number) => {
+    if (isLargeScreen) {
+      setHoveredIndex(index);
+    }
+  };
+
+  const handleHoverLeave = () => {
+    if (isLargeScreen) {
+      setHoveredIndex(-1);
+    }
+  };
 
   return (
     <Box className="feature-tabs">
       <Box className="gradient-title" width={{ base: "100%", sm: "40%" }}>
-        One platform to connect to all of your users' external apps
+        <p>Why Choose One Funnel?</p>
+        <Box className="content-header" >
+          Designed to Support Business Growth and Scale       
+        </Box>
       </Box>
 
-      <Box className="tabs-wrapper">
-        {tabs.map((tab, index) => (
-          <FeatureTab
-            tab={tab}
-            key={tab.title}
-            tabIndex={index}
-            selected={index === selectedIndex}
-            setSelectedIndex={setSelectedIndex}
+      <Box display="flex" gap={6} alignItems="flex-start">
+        <Box className="tabs-container" flex="1">
+          <Box className="tabs-wrapper">
+            {tabs.map((tab, index) => (
+              <Box
+                key={tab.title}
+                onMouseEnter={() => handleHover(index)}
+                onMouseLeave={handleHoverLeave}
+                onClick={() => handleClick(index)}
+              >
+                <FeatureTab
+                  tab={{...tab, title: `• ${tab.title}`}}
+                  tabIndex={index}
+                  selected={activeIndex === index} 
+                  setSelectedIndex={setSelectedIndex}
+                  showCta={index === 0}
+                />
+              </Box>
+            ))}
+          </Box>
+        </Box>
+
+        <Box className="shared-image" flex="1">
+          <Image
+            src="/images/hero-img.svg"
+            height="250px"
+            objectFit="contain"
+            transform={activeIndex >= 0 ? `translateY(${activeIndex * 20}px)` : "translateY(0)"}
+            transition="transform 0.3s ease-in-out"
           />
-        ))}
+        </Box>
       </Box>
     </Box>
   );

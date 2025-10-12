@@ -5,13 +5,13 @@ const TextFeatured = () => {
   return (
     <Box className="text-featured">
       <Box className="app-title" textAlign="center">
-        We Aggregate with Ease, <br /> You{" "}
+        Build Smarter,{" "}                    
         <Box as="span" className="special-highlight">
           Launch
-        </Box>{" "}
-        with{" "}
+        </Box>{" "}Faster,
+        Integrate{" "}
         <Box as="span" className="special-highlight">
-          Confidence
+          Once
         </Box>
       </Box>
 

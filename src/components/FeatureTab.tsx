@@ -1,16 +1,7 @@
-import { MERCHANT_APP_URL } from "@/utils/constants";
-import {
-  Box,
-  Button,
-  Flex,
-  GridItem,
-  Image,
-  SimpleGrid,
-  Spacer,
-} from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import type { Dispatch } from "react";
+import { MERCHANT_APP_URL } from "@/utils/constants";
 import { ArrowRight } from "iconsax-react";
-// import type { ReactNode } from "react";
 
 type Tab = {
   title: string;
@@ -24,10 +15,11 @@ interface Props {
   selected: boolean;
   setSelectedIndex: Dispatch<React.SetStateAction<number>>;
   tabIndex: number;
+  showCta?: boolean;
 }
 
 const FeatureTab = (props: Props) => {
-  const { tab, selected, tabIndex, setSelectedIndex } = props;
+  const { tab, selected, tabIndex, setSelectedIndex, showCta } = props;
 
   const handleClick = () => {
     setSelectedIndex(tabIndex);
@@ -36,37 +28,25 @@ const FeatureTab = (props: Props) => {
   return (
     <Box
       className={`featured-tab ${selected ? "selected" : ""}`}
-      onClick={handleClick}
     >
-      <Flex>
-        <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
-          <GridItem className="content">
-            <Box className="title">{tab.title}</Box>
-            {selected && (
-              <>
-                <Box className="description">{tab.description}</Box>
+      {showCta && (
+        <Button
+          as="a"
+          href={MERCHANT_APP_URL}
+          className="cta"
+          mt={10}          
+        >
+          {tab.cta}
+          <ArrowRight size={20} variant="TwoTone" color="white" />
+        </Button>
+      )}
 
-                <Spacer />
-                <Button as="a" href={MERCHANT_APP_URL} className="cta">
-                  {tab.cta}
-
-                  <ArrowRight size={20} variant="TwoTone" color="white" />
-                </Button>
-              </>
-            )}
-          </GridItem>
-
-          {selected && (
-            <GridItem className="featured-image">
-              <Image
-                src="/images/hero-img.svg"
-                alt={`${tab.title} image`}
-                height="250px"
-              />
-            </GridItem>
-          )}
-        </SimpleGrid>
-      </Flex>
+      <Box className="content">
+        <Box className="title" cursor="pointer" onClick={handleClick}>{tab.title}</Box>
+        {selected && (
+          <Box className="description">{tab.description}</Box>
+        )}
+      </Box>
     </Box>
   );
 };

@@ -1,8 +1,9 @@
 import { MERCHANT_APP_URL } from "@/utils/constants";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, useBreakpointValue } from "@chakra-ui/react";
 import { ArrowRight } from "iconsax-react";
 
 const GetStartedBtn = () => {
+  const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 });
   return (
     <Button
       bg="brand.primary700"
@@ -11,12 +12,19 @@ const GetStartedBtn = () => {
       rounded="full"
       as="a"
       href={MERCHANT_APP_URL}
-      size="lg"
+      // size="lg"
+      size={{ base: "sm", md: "md", lg: "lg" }}
+      px={{ base: 4, md: 6, lg: 8 }}
+      py={{ base: 2, md: 3, lg: 4 }}
     >
-      <Box marginRight="10px">Get Started</Box>
-      <ArrowRight size={20} variant="TwoTone" color="white" />
+      <Box marginRight="10px"
+      fontSize={{ base: "sm", md: "md", lg: "lg" }}
+      >
+        Get Started Now
+      </Box>
+      <ArrowRight size={iconSize} variant="TwoTone" color="white" />
     </Button>
-  );
+  );  
 };
 
 export default GetStartedBtn;

@@ -6,20 +6,19 @@ export default function Hero() {
     <Box className="hero">
       <Container>
         <Box className="pre-highlight-card">
-          Introducing your all-in-one finance solution 🚀
+          One Integration, Multiple Services
         </Box>
         <h1 className="title">
-          Simplifying Access to <br />
-          Financial Services with{" "}
-          <Box as="span" color="brand.primary700">
-            Ease.
-          </Box>
+          One Platform, Endless Possibilities for Banks and Fintechs 
         </h1>
-        <p className="description">
-          Access your funds in real-time without waiting anytime, anywhere,{" "}
-          <br />
-          Access your funds in real-time without.
-        </p>
+        <Box className="description">
+          Managing multiple APIs slows you down.
+          <br/>
+          One Funnel unifies everything
+          in real time, from KYC to different messaging options, detailed reporting, BVN validation & NIN verification, and more.
+          <br/>
+          A trial is all you need
+        </Box>
 
         <GetStartedBtn />
 
