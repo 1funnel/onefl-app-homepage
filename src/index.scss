@@ -421,7 +421,7 @@ footer.app-footer {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .app-title {
     font-size: 2rem !important;
   }
@@ -434,6 +434,9 @@ footer.app-footer {
     font-size: 3rem;
 
   }  
+  .documentation-section .pre-highlight-card{
+    font-size: 12px,
+  }
 }
 
 @media (max-width: 480px) {
