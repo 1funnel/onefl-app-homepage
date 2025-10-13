@@ -66,7 +66,7 @@ const footerMenu = [
     links: [
       {
         title: "Support",
-        href: "mailto:support@onefunnel.com",
+        href: "mailto:support@1funnel.ng",
       },
       {
         title: "Help Center",
@@ -86,7 +86,7 @@ const Footer = () => {
       <Container>
 
     <SimpleGrid
-      columns={{ base: 2, md: 5 }}
+      columns={{ base: 1, sm: 5 }}
       gap="20px"
       justifyItems={{ base: "center", md: "flex-start" }}
       textAlign={{ base: "center", md: "left" }}
@@ -149,7 +149,7 @@ const Footer = () => {
 
 
         <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px" className="social-footer"
-          justifyItems={{ base: "center", md: "flex-start" }}
+          justifyItems={{ base: "center", md: "stretch" }}
           textAlign={{ base: "center", md: "left" }}
         >
           <GridItem alignItems="center">

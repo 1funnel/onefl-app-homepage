@@ -17,7 +17,9 @@ const DocumentationCard = () => {
               All in one solution
             </Box>
 
-            <Box className="content" marginBottom="20px">
+            <Box className="content" 
+             marginBottom={{ base: "20px", md: "40px", lg: "70px" }}
+            >
               Streamline operations, manage costs, and improve speed via a trusted infrastructure built for scale.
             </Box>
 

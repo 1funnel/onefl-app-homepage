@@ -18,7 +18,7 @@ body {
 }
 
 .section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   padding-top: 60px;
 }
 .dark-section {
@@ -179,6 +179,11 @@ body {
 
   .context {
     margin-bottom: 30px;
+  }
+
+  .card-icon{
+    border: 1px white;
+    padding: 5px;
   }
 
   .product-item {
@@ -377,8 +382,7 @@ body {
 
 footer.app-footer {
   background: $brand-dark-gradient-invert;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 5px;
 
   .app-title {
     font-size: 25px;
@@ -392,7 +396,7 @@ footer.app-footer {
     margin-bottom: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: var(--one-fl-colors-brand-secondary100);
   }
 
@@ -407,6 +411,7 @@ footer.app-footer {
 
   .social-footer {
     margin: 70px 0;
+    padding: 0px 40px;
   }
 
   .copyright {
@@ -423,7 +428,7 @@ footer.app-footer {
 
 @media screen and (max-width: 850px) {
   .app-title {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
   }
 
   .testimonial-card {
