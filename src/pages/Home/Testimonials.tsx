@@ -1,6 +1,8 @@
 import TestimonialCard from "@/components/TestimonialCard";
-import { Box } from "@chakra-ui/react";
+import { Box, Button, Flex } from "@chakra-ui/react";
 import Carousel from "react-multi-carousel";
+import { useRef } from "react";
+import { ArrowRight, ArrowLeft } from "iconsax-react";
 
 const testimonials = [
   {
@@ -59,6 +61,8 @@ const responsive = {
 };
 
 const Testimonials = () => {
+  const carouselRef = useRef<any>(null);
+
   return (
     <Box className="testimonials">
       <Box className="special-highlight-title">Testimonials</Box>
@@ -69,12 +73,49 @@ const Testimonials = () => {
       </Box>
 
       <Box className="testimonial-slides">
-        <Carousel responsive={responsive} partialVisible arrows={false}>
+        <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={false}>
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} testimonial={testimonial} />
           ))}
         </Carousel>
       </Box>
+
+        <Flex
+          justifyContent="space-between"
+          alignItems="center"
+          mt={6}
+          px={{ base: 2, md: 4, lg: 6 }}
+          display={{ base: "none", md: "none", lg: "flex" }}
+        >
+          <Button
+            onClick={() => carouselRef.current?.previous()}
+            bg="transparent"
+            colorScheme="none" 
+            _hover={{ bg: "whiteAlpha.200", borderColor: "white" }}
+            _active={{ bg: "whiteAlpha.300" }}
+            _focus={{ boxShadow: "none" }}
+            height="auto"
+            border="1px solid white"
+            padding="5px"
+          >
+            <ArrowLeft size={28} variant="TwoTone" color="white" />
+          </Button>
+      
+          <Button
+            onClick={() => carouselRef.current?.next()}
+            bg="transparent"
+            p={0}
+            colorScheme="none" 
+            _hover={{ bg: "whiteAlpha.200", borderColor: "white" }}
+            _active={{ bg: "whiteAlpha.300" }}
+            _focus={{ boxShadow: "none" }}
+            height="auto"
+            border="1px solid white"
+            padding="5px"
+          >
+            <ArrowRight size={28} variant="TwoTone" color="white" />
+          </Button>
+        </Flex>
     </Box>
   );
 };

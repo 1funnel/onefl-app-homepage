@@ -18,7 +18,7 @@ body {
 }
 
 .section {
-  padding: 100px 30px;
+  padding: 80px 20px;
   padding-top: 60px;
 }
 .dark-section {
@@ -74,7 +74,7 @@ body {
   text-align: center;
   padding: 8px 25px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .navbar {
@@ -106,12 +106,14 @@ body {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     line-height: 1.1;
     margin-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 20px;
+    text-align: center;
   }
+  
 
   .description {
     font-size: 1rem;
@@ -133,7 +135,7 @@ body {
 
   .trusted-by {
     text-align: center;
-    padding: 50px 40px;
+    padding: 50px 10px;
     width: 100%;
     position: relative;
 
@@ -144,19 +146,20 @@ body {
       margin: 0 auto;
     }
     .content-header{
-      font-size: 20px;
+      font-size: 1.7rem;
+      font-weight: 600;
     }
   }
 
   .clientele-list {
-    margin-top: 60px;
+    margin-top: 30px;
 
-    .clientele-logo {
-      img,
-      svg {
-        filter: invert(1);
-      }
-    }
+    // .clientele-logo {
+    //   img,
+    //   svg {
+    //     filter: invert(1);
+    //   }
+    // }
   }
 
   &::after {
@@ -176,6 +179,11 @@ body {
 
   .context {
     margin-bottom: 30px;
+  }
+
+  .card-icon{
+    border: 1px white;
+    padding: 5px;
   }
 
   .product-item {
@@ -212,6 +220,10 @@ body {
     font-size: 20px;
     margin-top: 15px;    
   }
+  .tabs-container .featured-tab {
+    margin-bottom: 5px;
+  }
+
 
   .tabs-wrapper {
     border-left: 3px solid var(--one-fl-colors-brand-primary700);
@@ -241,7 +253,7 @@ body {
 
       .cta {
         font-size: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         background-color: var(--one-fl-colors-brand-primary700);
         width: fit-content;
       }
@@ -370,8 +382,7 @@ body {
 
 footer.app-footer {
   background: $brand-dark-gradient-invert;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 5px;
 
   .app-title {
     font-size: 25px;
@@ -379,11 +390,13 @@ footer.app-footer {
     line-height: 1.1;
   }
 
+  
+
   .menu-header {
     margin-bottom: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: var(--one-fl-colors-brand-secondary100);
   }
 
@@ -398,6 +411,7 @@ footer.app-footer {
 
   .social-footer {
     margin: 70px 0;
+    padding: 0px 40px;
   }
 
   .copyright {
@@ -412,12 +426,75 @@ footer.app-footer {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .app-title {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
   }
 
   .testimonial-card {
    height: 380px !important;
   }
+
+  .title {
+    font-size: 3rem;
+
+  }  
+  .documentation-section .pre-highlight-card{
+    font-size: 12px,
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section .title {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+  }  
+
+  .hero-section .description {
+     width: 100%;
+     text-align: left;
+  }
+
+  .app-title{
+    font-size: 1rem;
+  }
+
+  .trusted-clientele-section .trusted-by .content-header{
+    font-size: 1.2rem;
+  }
+  .trusted-clientele-section .trusted-by .content{
+    width: 100%;
+    text-align: left;
+  }
+
+  .product-intro-section .product-item {
+    margin-right: 25px;
+    height: 200px;
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .description {
+      font-size: 15px;
+    }
+  }
+
+  .app-features-tab .tabs-wrapper .featured-tab .title {
+    font-size: 15px;
+  }
+
+  .pre-highlight-card {
+    font-size: 12px;
+  }
+
+  .documentation-section .brief {
+    margin-bottom: 10px;
+  }
+
+  .app-footer .app-title{
+    font-size: 15px;
+  }
+
 }

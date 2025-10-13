@@ -1,4 +1,4 @@
-import { Box, Spacer } from "@chakra-ui/react";
+import { Box, Spacer, useBreakpointValue } from "@chakra-ui/react";
 import type { Icon } from "iconsax-react";
 
 interface Props {
@@ -8,20 +8,22 @@ interface Props {
 const ProductCard = (props: Props) => {
   const { product } = props;
   const IconComponent = product.icon;
+  const iconSize = useBreakpointValue({ base: 45, md: 50, lg: 60 });
+
 
   return (
     <Box className="product-item">
       <Box>
         <IconComponent
-          size={60}
+          size={iconSize}
           variant="Bulk"
           color="var(--one-fl-colors-brand-primary700)"
         />
       </Box>
       <Spacer />
-      <Box className="title">{product.title}</Box>
+      <Box className="title"  fontSize={{ base: "md", md: "lg", lg: "xl" }} fontWeight="bold">{product.title}</Box>
 
-      <Box className="description">{product.description}</Box>
+      <Box className="description" fontSize={{ base: "sm", md: "md", lg: "lg" }}>{product.description}</Box>
     </Box>
   );
 };
