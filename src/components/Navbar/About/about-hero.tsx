@@ -1,29 +1,34 @@
-import { DOCUMENTATION_URL } from "@/utils/constants";
-import { Box, Button, GridItem, Image, SimpleGrid, useBreakpointValue} from "@chakra-ui/react";
-import { ArrowRight } from "iconsax-react";
+import { Box, GridItem, Image, SimpleGrid } from "@chakra-ui/react";
+import GetStartedBtn from "@/components/GetStartedBtn";
 
-const DocumentationCard = () => {
-  const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 }) ?? 18;
+
+const AboutHero = () => {
+//   const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 }) ?? 18;
   return (
     <Box className="documentation-card">
       <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
         <GridItem>
           <Box className="brief">
             <Box className="pre-highlight-card">
-              Access Multiple Services with One Smart API connection
+              About Us
             </Box>  
 
             <Box className="app-title gradient-text">
-              All in one solution
+              Simplifying Access to Financial Services
             </Box>
 
             <Box className="content" 
              marginBottom={{ base: "20px", md: "40px", lg: "70px" }}
+             p={2}
             >
-              Streamline operations, manage costs, and improve speed via a trusted infrastructure built for scale.
+              Discover One Funnel's mission to deliver Fintech-as-a-Service solutions,<br/>
+              designed for startups and fintechs needing BVN/NIN queries, <br/> phone verification,
+              SMS, USSD, bill payments, transfers and more.
             </Box>
 
-            <Button
+            <GetStartedBtn />
+
+            {/* <Button
               bg="brand.primary700"
               color="white"
               _hover={{ bg: "brand.primary600" }}
@@ -37,13 +42,13 @@ const DocumentationCard = () => {
             >
               <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }} >API Documentation</Box>
               <ArrowRight size={iconSize} variant="TwoTone" color="white" />
-            </Button>
+            </Button> */}
           </Box>
         </GridItem>
         <GridItem>
           <Box className="content">
             <Image
-              src="/images/api-doc-code-bg.png"
+              src="/images/about-hero.svg"
               alt="Documentation Image"
               width="100%"
             />
@@ -54,4 +59,4 @@ const DocumentationCard = () => {
   );
 };
 
-export default DocumentationCard;
+export default AboutHero;

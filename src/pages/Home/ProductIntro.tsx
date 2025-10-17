@@ -1,8 +1,9 @@
 import ProductCard from "@/components/ProductCard";
-import { Box, Button, useBreakpointValue } from "@chakra-ui/react";
-import { Bank, Messages, Mobile, Receipt1, SecurityUser, ArrowRight } from "iconsax-react";
+import { Box, Button, Flex, useBreakpointValue } from "@chakra-ui/react";
+import { Bank, Messages, Mobile, Receipt1, SecurityUser, ArrowRight, ArrowLeft } from "iconsax-react";
 import Carousel from "react-multi-carousel";
 import { DOCUMENTATION_URL } from "@/utils/constants";
+import { useRef } from "react";
 
 
 const productsBrief = [
@@ -39,13 +40,13 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3, 
+    slidesToSlide: 1, 
     partialVisibilityGutter: 30
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2, 
+    slidesToSlide: 1, 
     partialVisibilityGutter: 30
   },
   mobile: {
@@ -58,6 +59,9 @@ const responsive = {
 
 const ProductIntro = () => {
   const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 });
+  const carouselRef = useRef<any>(null);
+
+
   return (
     <Box className="product-intro">
       <Box className="context">
@@ -101,14 +105,52 @@ const ProductIntro = () => {
           </Box>
         </Box>
         <Box className="product-briefs" gap="40px">
-          <Carousel responsive={responsive} partialVisible arrows={false}>
+          <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={false}>
             {productsBrief.map((product) => {
               return <ProductCard product={product} key={product.title} />;
             })}
           </Carousel>
         </Box>
       </Box>
-    </Box>
+
+      <Flex
+       justifyContent="space-between"
+        alignItems="center"
+        mt={6}
+        px={{ base: 2, md: 4, lg: 6 }}
+        display={{ base: "none", md: "none", lg: "flex" }}
+      >
+        <Button
+          onClick={() => carouselRef.current?.previous()}
+          bg="transparent"
+          colorScheme="none" 
+          _hover={{ bg: "whiteAlpha.200", borderColor: "white" }}
+          _active={{ bg: "whiteAlpha.300" }}
+          _focus={{ boxShadow: "none" }}
+          height="auto"
+          border="1px solid white"
+          padding="5px"
+        >
+          <ArrowLeft size={28} variant="TwoTone" color="white" />
+        </Button>
+
+        <Button
+          onClick={() => carouselRef.current?.next()}
+          bg="transparent"
+          p={0}
+          colorScheme="none" 
+          _hover={{ bg: "whiteAlpha.200", borderColor: "white" }}
+          _active={{ bg: "whiteAlpha.300" }}
+          _focus={{ boxShadow: "none" }}
+          height="auto"
+          border="1px solid white"
+          padding="5px"
+        >
+          <ArrowRight size={28} variant="TwoTone" color="white" />
+        </Button>
+      </Flex>
+   </Box>  
+ 
   );
 };
 

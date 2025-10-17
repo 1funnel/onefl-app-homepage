@@ -8,7 +8,7 @@ interface Props {
 const ProductCard = (props: Props) => {
   const { product } = props;
   const IconComponent = product.icon;
-  const iconSize = useBreakpointValue({ base: 45, md: 50, lg: 60 }) ?? 50;
+  const iconSize = useBreakpointValue({ base: 45, md: 50, lg: 60 });
 
 
   return (
@@ -21,7 +21,7 @@ const ProductCard = (props: Props) => {
         />
       </Box>
       <Spacer />
-      <Box className="title"  fontSize={{ base: "md", md: "lg", lg: "xl" }} font-weight="bold">{product.title}</Box>
+      <Box className="title"  fontSize={{ base: "md", md: "lg", lg: "xl" }} fontWeight="bold">{product.title}</Box>
 
       <Box className="description" fontSize={{ base: "sm", md: "md", lg: "lg" }}>{product.description}</Box>
     </Box>

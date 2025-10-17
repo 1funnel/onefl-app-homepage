@@ -18,7 +18,7 @@ body {
 }
 
 .section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   padding-top: 60px;
 }
 .dark-section {
@@ -179,6 +179,11 @@ body {
 
   .context {
     margin-bottom: 30px;
+  }
+
+  .card-icon{
+    border: 1px white;
+    padding: 5px;
   }
 
   .product-item {
@@ -377,8 +382,7 @@ body {
 
 footer.app-footer {
   background: $brand-dark-gradient-invert;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 5px;
 
   .app-title {
     font-size: 25px;
@@ -390,9 +394,9 @@ footer.app-footer {
 
   .menu-header {
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    // letter-spacing: 1px;
     color: var(--one-fl-colors-brand-secondary100);
   }
 
@@ -407,6 +411,7 @@ footer.app-footer {
 
   .social-footer {
     margin: 70px 0;
+    padding: 0px 40px;
   }
 
   .copyright {
@@ -423,7 +428,7 @@ footer.app-footer {
 
 @media screen and (max-width: 850px) {
   .app-title {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
   }
 
   .testimonial-card {
@@ -434,9 +439,9 @@ footer.app-footer {
     font-size: 3rem;
 
   }  
-  .documentation-section .pre-highlight-card{
-    font-size: 12px,
-  }
+  // .documentation-section .pre-highlight-card{
+  //   font-size: 12px;
+  // }
 }
 
 @media (max-width: 480px) {
@@ -482,6 +487,7 @@ footer.app-footer {
 
   .pre-highlight-card {
     font-size: 12px;
+    // text-align: center !important;
   }
 
   .documentation-section .brief {
@@ -491,17 +497,54 @@ footer.app-footer {
   .app-footer .app-title{
     font-size: 15px;
   }
-  
- // .app-title .special-highlight {
-//   font-size: inherit; /*
-//   font-weight: 600;   /*
-// }
-
-//  #footer{
-//   font-size: 10px;  
-//  }
-
-
-
-
 }
+
+
+.focus-section {
+  background: $brand-dark-gradient-invert;
+  
+  .pre-highlight-card {
+    margin-bottom: 20px;
+     
+  }
+
+  .app-title {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.chat-intro-section {
+  background: $brand-dark-gradient-invert;
+
+  .context {
+    margin-bottom: 30px;
+  }
+
+  .card-icon{
+    border: 1px white;
+    padding: 5px;
+  }
+
+  .product-item {
+    border: 1px solid var(--one-fl-colors-brand-secondary700);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 45px;
+    height: 240px;
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 15px;
+    }
+  }
+}
+

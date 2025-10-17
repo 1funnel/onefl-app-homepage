@@ -5,6 +5,7 @@ import {
   GridItem,
   Image,
   SimpleGrid,
+  Link
 } from "@chakra-ui/react";
 // import Container from "./Container";
 import GetStartedBtn from "./GetStartedBtn";
@@ -66,7 +67,7 @@ const footerMenu = [
     links: [
       {
         title: "Support",
-        href: "mailto:support@onefunnel.com",
+        href: "mailto:support@1funnel.ng",
       },
       {
         title: "Help Center",
@@ -86,7 +87,7 @@ const Footer = () => {
       <Container>
 
     <SimpleGrid
-      columns={{ base: 2, md: 5 }}
+      columns={{ base: 1, sm: 5 }}
       gap="20px"
       justifyItems={{ base: "center", md: "flex-start" }}
       textAlign={{ base: "center", md: "left" }}
@@ -149,7 +150,7 @@ const Footer = () => {
 
 
         <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px" className="social-footer"
-          justifyItems={{ base: "center", md: "flex-start" }}
+          justifyItems={{ base: "center", md: "stretch" }}
           textAlign={{ base: "center", md: "left" }}
         >
           <GridItem alignItems="center">
@@ -161,9 +162,24 @@ const Footer = () => {
 
           <GridItem alignItems="center" justifyItems={{ base: "unset", sm: "flex-end"}}>
             <Flex gap="15px">
-              <Image src="/images/facebook.svg" alt="facebook icon" />
-              <Image src="/images/linkedin.svg" alt="linkedin icon" />
-              <Image src="/images/x-twitter.svg" alt="x-twitter icon" />
+              <Link
+                href="https://www.instagram.com/1funnelltd?igsh=MWJ1ZW1uZGM1YjNoMA=="
+                isExternal
+              >
+                <Image src="/images/facebook.svg"  alt="facebook icon" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/onefunnel-limited/"
+                isExternal
+              >
+                <Image src="/images/linkedin.svg" alt="LinkedIn icon" />
+              </Link>
+              <Link
+                href="https://x.com/1FunnelLtd"
+                isExternal
+              >
+                <Image src="/images/x-twitter.svg" alt="x-twitter icon" />
+              </Link>
             </Flex>
           </GridItem>
         </SimpleGrid>
