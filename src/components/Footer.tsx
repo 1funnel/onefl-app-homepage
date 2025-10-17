@@ -5,6 +5,7 @@ import {
   GridItem,
   Image,
   SimpleGrid,
+  Link
 } from "@chakra-ui/react";
 // import Container from "./Container";
 import GetStartedBtn from "./GetStartedBtn";
@@ -161,9 +162,24 @@ const Footer = () => {
 
           <GridItem alignItems="center" justifyItems={{ base: "unset", sm: "flex-end"}}>
             <Flex gap="15px">
-              <Image src="/images/facebook.svg" alt="facebook icon" />
-              <Image src="/images/linkedin.svg" alt="linkedin icon" />
-              <Image src="/images/x-twitter.svg" alt="x-twitter icon" />
+              <Link
+                href="https://www.instagram.com/1funnelltd?igsh=MWJ1ZW1uZGM1YjNoMA=="
+                isExternal
+              >
+                <Image src="/images/facebook.svg"  alt="facebook icon" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/onefunnel-limited/"
+                isExternal
+              >
+                <Image src="/images/linkedin.svg" alt="LinkedIn icon" />
+              </Link>
+              <Link
+                href="https://x.com/1FunnelLtd"
+                isExternal
+              >
+                <Image src="/images/x-twitter.svg" alt="x-twitter icon" />
+              </Link>
             </Flex>
           </GridItem>
         </SimpleGrid>
