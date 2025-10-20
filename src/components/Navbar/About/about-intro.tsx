@@ -1,36 +1,26 @@
 import { Box, SimpleGrid, GridItem, } from "@chakra-ui/react";
 
-const teamMembers = [
+const TeamMembers = [
   {
     name: "Chike Orji",
-    designation: "CEO and Co-Founder",
-    image: "#"
+    designation: "Chief Executive Officer (CEO)",
+    image: "/images/team-frame.svg"
   },
   {
     name: "Adekunle Adeyemi",
-    designation: "CTO",
-    image: "#"
+    designation: "Chief Operations Officer (COO)",
+    image: "/images/team-frame.svg"
   },
   {
     name: "Olorunfemi Hanson",
-    designation: "CFO",
-    image: "#"
+    designation: "Chief Marketing Officer (CMO)",
+    image: "/images/team-frame.svg"
   },
   {
     name: "Olufunmilayo Tijabosho",
     designation: "Company Secretary",
-    image: "#"
+    image: "/images/team-frame.svg"
   },
-  {
-    name: "Yetunde Adekoya",
-    designation: "Executive Assistant",
-    image: "#"
-  },
-  {
-    name: "Chike Orji",
-    designation: "CEO and Co-Founder",
-    image: "#"
-  }
 ];
 
 
@@ -45,10 +35,10 @@ const AboutIntro = () => {
                     <Box className="content" 
                      marginBottom={{ base: "20px", md: "40px", lg: "70px" }}
                      fontWeight="500"
-                     marginTop={{base: 5, md: 10}}
+                     marginTop={{base: 0, md: 10}}
                     >
-                      One Funnel is powered by experts in Fintech, products, operations<br/>
-                      and marketing. Meet our team, driven by innovation and excellence.
+                      Behind every seamless integration is a team of fintech innovators,
+                      product experts, and engineers dedicated to shaping Africa's financial future.
                     </Box>
         
                   </Box>
@@ -70,12 +60,17 @@ const AboutIntro = () => {
         <Box 
           mt={10}
           p={{ base: 4, md: 6, lg: 8 }}
+          width={{base: "100%", md: "80%"}}
+          display="flex"
+          justifyContent="center"
+          // alignItems="center"
+          mx="auto"
         >
           <SimpleGrid 
-            columns={{ base: 1, sm: 2, md: 3 }} 
-            spacing={{ base: 6, md: 8 }}
+            columns={{ base: 1, sm: 2, md: 2 }} 
+            spacing={{ base: 6, md: 20 }}
           >
-            {teamMembers.map((member, index) => (
+            {TeamMembers.map((team, index) => (
               <Box key={index}>
                 <Box mb={3}>
                   <Box 
@@ -86,19 +81,19 @@ const AboutIntro = () => {
                     borderTop="1px solid rgba(100, 150, 255, 0.4)"
                     // mt={5} 
                   >
-                    <Box mt={10} >{member.name}</Box>
+                    <Box mt={10} >{team.name}</Box>
                   </Box>
                   <Box 
                     color="rgba(255, 255, 255, 0.6)" 
                     fontSize="13px"
                   >
-                    {member.designation}
+                    {team.designation}
                   </Box>
                 </Box>
               
               <Box
                 width="100%"
-                height="250px"
+                height="350px"
                 bg="rgba(255, 255, 255, 0.05)"
                 borderRadius="8px"
                 overflow="hidden"
@@ -107,8 +102,8 @@ const AboutIntro = () => {
               >
                 <Box
                   as="img"
-                  src={member.image}
-                  alt={member.name}
+                  src={team.image}
+                  alt={team.name}
                   width="100%"
                   height="100%"
                   objectFit="cover"

@@ -8,14 +8,15 @@ export default function ContactHero() {
    return (
     <Box className="hero">
       <Container>
-        <Box className="pre-highlight-card">
+        <Box className="pre-highlight-card" textAlign="left">
           Real Result, Real Impact
         </Box>
         <h1 className="title">
-          We would love to hear from you
+          We'd love to hear from you
         </h1>
         <Box className="description">
-         Our Support Team is available Monday - Friday, 8AM - 5PM
+          Our support team is available Monday to Friday, 8 AM - 5 PM (WAT) to assist with product inquiries, partnerships, and technical support.
+          Whether you're a bank, fintech, or developer, we're just a message away.
         </Box>
 
 
@@ -23,11 +24,12 @@ export default function ContactHero() {
           gap={4}
           align="center"
           justify={{ base: "center", md: "center" }}
-          mt={8}
+          mt={{base: 0, md: 8}}
         >
           <Button
-                  my={10}
-                  bg="#1a1a36ff"
+            mt={{base: 2, md: 10}}
+            mb={10}
+            bg="#1a1a36ff"
                   border="1px solid #37376fff"
                   color="white"
                   _hover={{ bg: "#17172fff" }}
@@ -39,11 +41,12 @@ export default function ContactHero() {
                   px={{ base: 4, md: 6, lg: 8 }}
                   py={{ base: 2, md: 3, lg: 4 }}
                 >
-                  <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Phone Call</Box>
+                  <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Request A Call</Box>
                   <ArrowRight size={iconSize} variant="TwoTone" color="white" />
           </Button>
           <Button
-                  my={10}
+                  mt={{base: 2, md: 10}}
+                  mb={10}
                   bg="brand.primary700"
                   color="white"
                   _hover={{ bg: "brand.primary600" }}
@@ -55,7 +58,7 @@ export default function ContactHero() {
                   px={{ base: 4, md: 6, lg: 8 }}
                   py={{ base: 2, md: 3, lg: 4 }}
                 >
-                  <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Send Ticket</Box>
+                  <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Send a Message</Box>
                   <ArrowRight size={iconSize} variant="TwoTone" color="white" />
           </Button>
 

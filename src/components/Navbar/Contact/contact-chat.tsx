@@ -1,17 +1,4 @@
-import {
-  Box,
-  GridItem,
-  Button,
-  FormControl,
-  Textarea,
-  FormLabel,
-  Input,
-  SimpleGrid,
-  Flex,
-  Link,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import {Box, GridItem, Button, FormControl, Textarea, FormLabel, Input, SimpleGrid, Flex, Link, Text, useBreakpointValue } from "@chakra-ui/react";
 import { MessageText, Messages, Call, ArrowRight } from "iconsax-react";
 
 const ContactChat = () => {
@@ -21,23 +8,21 @@ const ContactChat = () => {
     {
       icon: <MessageText size="28" color="#00C2FF" variant="Bulk" />,
       title: "Email",
-      description: "Our friendly team is here to help",
+      description: "Our support team is always ready to help with technical or business enquiries.",
       linkText: "allofus@1funnel.ng",
-      href: "mailto:allofus@1funnel.ng",
-    },
-    {
-      icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
-      title: "Live Chat",
-      description: "Our friendly team is here to help",
-      linkText: "Send a Ticket",
-      href: "#",
+      href: "mailto:support@1funnel.ng",
     },
     {
       icon: <Call size="28" color="#00C2FF" variant="Bulk" />,
       title: "Phone",
-      description: "Our friendly team is here to help",
-      linkText: "+234 702 517 4375",
-      href: "tel:+2347025174375",
+      description: "Available Monday to Friday, 8 AM - 5 PM.",
+      linkText: "+234 702 517 4376",
+      href: "tel:+234 702 517 4376",
+    },
+    {
+      icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
+      title: "Visit Us",
+      description: "41, Industrial Avenue, Yaba, Lagos State. Available for visits on Monday, Wednesday & Friday.",
     },
   ];
 
@@ -49,7 +34,7 @@ const ContactChat = () => {
             {contacts.map((contact, index) => (
               <Flex
                 key={index}
-                flexDir="column"
+                flexDirection="column"
                 gap={3}
                 bg="transparent"
                 p={2}
@@ -103,8 +88,7 @@ const ContactChat = () => {
               Get in Touch
             </Text>
             <Text color="gray.400" mb={8}>
-              Have questions or need assistance? We're here to help! Reach out to us for inquires,
-               partnerships oppurtuinities or support. Lert's build something great together.
+              Have questions or need assistance? Fill out the form below, and our team will reach out as soon as possible.
             </Text>
 
             <form>
