@@ -1,12 +1,12 @@
 import { Box, Container } from "@chakra-ui/react";
 import "react-multi-carousel/lib/styles.css";
-import ProductHero from "@/components/Navbar/Product/product-hero";
-import ProductTab from "@/components/Navbar/Product/product-features";
-import ProductClientele from "@/components/Navbar/Product/product-clientele";
-import ProductBenefits from "@/components/Navbar/Product/product-benefits";
-import ProductTestimonials from "@/components/Navbar/Product/product-testimonials";
-import ProductText from "@/components/Navbar/Product/product-text";
-import ProductSteps from "@/components/Navbar/Product/product-steps";
+import ProductHero from "@/components/Navbar/Product/ProductHero";
+import ProductTab from "@/components/Navbar/Product/ProductFeatures";
+import ProductClientele from "@/components/Navbar/Product/ProductClientele";
+import ProductBenefits from "@/components/Navbar/Product/ProductBenefits";
+import ProductTestimonials from "@/components/Navbar/Product/ProductTestimonials";
+import ProductText from "@/components/Navbar/Product/ProductText";
+import ProductSteps from "@/components/Navbar/Product/ProductSteps";
 
 const Products = () => {
   return (

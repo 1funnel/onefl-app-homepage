@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, GridItem, } from "@chakra-ui/react";
 
-const TeamMembers = [
+const teamMembers = [
   {
     name: "Chike Orji",
     designation: "Chief Executive Officer (CEO)",
@@ -63,14 +63,13 @@ const AboutIntro = () => {
           width={{base: "100%", md: "80%"}}
           display="flex"
           justifyContent="center"
-          // alignItems="center"
           mx="auto"
         >
           <SimpleGrid 
             columns={{ base: 1, sm: 2, md: 2 }} 
             spacing={{ base: 6, md: 20 }}
           >
-            {TeamMembers.map((team, index) => (
+            {teamMembers.map((team, index) => (
               <Box key={index}>
                 <Box mb={3}>
                   <Box 
@@ -79,7 +78,6 @@ const AboutIntro = () => {
                     fontWeight="600"
                     mb={1}
                     borderTop="1px solid rgba(100, 150, 255, 0.4)"
-                    // mt={5} 
                   >
                     <Box mt={10} >{team.name}</Box>
                   </Box>

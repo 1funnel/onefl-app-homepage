@@ -1,30 +1,30 @@
 import {Box, GridItem, Button, FormControl, Textarea, FormLabel, Input, SimpleGrid, Flex, Link, Text, useBreakpointValue } from "@chakra-ui/react";
 import { MessageText, Messages, Call, ArrowRight } from "iconsax-react";
 
+const contacts = [
+  {
+    icon: <MessageText size="28" color="#00C2FF" variant="Bulk" />,
+    title: "Email",
+    description: "Our support team is always ready to help with technical or business enquiries.",
+    linkText: "allofus@1funnel.ng",
+    href: "mailto:support@1funnel.ng",
+  },
+  {
+    icon: <Call size="28" color="#00C2FF" variant="Bulk" />,
+    title: "Phone",
+    description: "Available Monday to Friday, 8 AM - 5 PM.",
+    linkText: "+234 702 517 4376",
+    href: "tel:+234 702 517 4376",
+  },
+  {
+    icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
+    title: "Visit Us",
+    description: "41, Industrial Avenue, Yaba, Lagos State. Available for visits on Monday, Wednesday & Friday.",
+  },
+];
+
 const ContactChat = () => {
   const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 });
-
-  const contacts = [
-    {
-      icon: <MessageText size="28" color="#00C2FF" variant="Bulk" />,
-      title: "Email",
-      description: "Our support team is always ready to help with technical or business enquiries.",
-      linkText: "allofus@1funnel.ng",
-      href: "mailto:support@1funnel.ng",
-    },
-    {
-      icon: <Call size="28" color="#00C2FF" variant="Bulk" />,
-      title: "Phone",
-      description: "Available Monday to Friday, 8 AM - 5 PM.",
-      linkText: "+234 702 517 4376",
-      href: "tel:+234 702 517 4376",
-    },
-    {
-      icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
-      title: "Visit Us",
-      description: "41, Industrial Avenue, Yaba, Lagos State. Available for visits on Monday, Wednesday & Friday.",
-    },
-  ];
 
   return (
     <Box>

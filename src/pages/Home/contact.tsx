@@ -1,7 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
 import "react-multi-carousel/lib/styles.css";
-import ContactHero from "../../components/Navbar/Contact/contact-hero"
-import ContactChat from "@/components/Navbar/Contact/contact-chat";
+import ContactHero from "../../components/Navbar/Contact/ConatactHero"
+import ContactChat from "@/components/Navbar/Contact/ContactChat";
 
 const Contact = () => {
   return (

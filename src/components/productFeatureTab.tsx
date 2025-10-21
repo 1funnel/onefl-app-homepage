@@ -2,8 +2,6 @@ import { Box, Button, UnorderedList, ListItem, useBreakpointValue } from "@chakr
 import { MERCHANT_APP_URL } from "@/utils/constants";
 import { ArrowRight } from "iconsax-react";
 
-
-
 export interface FeatureItem {
   id: string;
   title: string;

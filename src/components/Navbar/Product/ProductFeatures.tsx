@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Box, Button, SimpleGrid, GridItem, Image, Flex } from "@chakra-ui/react";
 import { FeatureTab, ProductFeatureTab } from "@/components/productFeatureTab";
 
+
 const ProductTab = () => {
   const [activeTab, setActiveTab] = useState(0);
 

@@ -85,7 +85,6 @@ body {
 .hero-section {
   background: $brand-dark-gradient;
   color: #ffffff;
-  // min-height: 90vh;
   text-align: center;
   box-shadow: inset 0px -20px 16px 15px $brand-dark-gradient;
   position: relative;
@@ -181,13 +180,6 @@ body {
 
   .clientele-list {
     margin-top: 30px;
-
-    // .clientele-logo {
-    //   img,
-    //   svg {
-    //     filter: invert(1);
-    //   }
-    // }
   }
 
   &::after {
@@ -435,8 +427,7 @@ footer.app-footer {
   .menu-header {
     margin-bottom: 10px;
     font-weight: 400;
-    text-transform: uppercase;
-    // letter-spacing: 1px;
+    text-transform: uppercase; 
     color: var(--one-fl-colors-brand-secondary100);
   }
 

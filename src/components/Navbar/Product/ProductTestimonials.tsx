@@ -4,10 +4,6 @@ import Carousel from "react-multi-carousel";
 import { useRef } from "react";
 import { ArrowRight, ArrowLeft } from "iconsax-react";
 
-type testimonials = {
-  title: string;
-  description: string;
-}
 
 const testimonials = [
   {

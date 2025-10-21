@@ -1,10 +1,10 @@
 import { Box, Container } from "@chakra-ui/react";
 import "react-multi-carousel/lib/styles.css";
-import AboutHero from "@/components/Navbar/About/about-hero";
-import AboutClientele from "@/components/Navbar/About/about-clinetele";
-import AboutFocus from "@/components/Navbar/About/about-focus";;
-import AboutIntro from "@/components/Navbar/About/about-intro";
-import AboutText from "@/components/Navbar/About/about-text";
+import AboutHero from "@/components/Navbar/About/AboutHero";
+import AboutClientele from "@/components/Navbar/About/AboutClinetele";
+import AboutFocus from "@/components/Navbar/About/AboutFocus";;
+import AboutIntro from "@/components/Navbar/About/AboutIntro";
+import AboutText from "@/components/Navbar/About/AboutText";
 
 const About = () => {
   return (

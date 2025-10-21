@@ -3,11 +3,11 @@ import Home from "@/pages/Home";
 import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer";
 import Contact from "./pages/Home/contact";
-import About from "./pages/Home/about"
+import About from "./pages/Home/about";
+
 import Products from "./pages/Home/products";
 
-
-function App() { 
+function App() {
   return (
     <>
       <Navbar />

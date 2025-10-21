@@ -2,7 +2,7 @@ import { Box, GridItem, SimpleGrid, UnorderedList, ListItem, Flex } from "@chakr
 import { Eye, Share } from "iconsax-react";
 
 
-const FocusItems = [
+const focusItems = [
   {
     title: "Identity & KYC",
     description:
@@ -24,25 +24,6 @@ const FocusItems = [
       "One connection, multiple essential APIs",
   },
 ]  
-
-// const GoalItems = [
-//   {
-//     title: "Our Mission",
-//     description: "To simplify financial infrastructure for Africa’s digital economy.",
-//     icon: <Share size={24} color="#4990A6" />,
-//   },
-//   {
-//     title: "Our Vision",
-//     description: "To be Africa’s most trusted fintech infrastructure.",
-//     icon: <Eye size={24} color="#4990A6" />,
-//   },
-//   {
-//     title: "Our Promise",
-//     description: "Reliability. Transparency. Innovation.",
-//     icon: <Share size={24} color="#4990A6" />,
-//   },
-// ]  
-
 
 const AboutFocus = () => {
   return (
@@ -70,7 +51,7 @@ const AboutFocus = () => {
             </Box>
 
             <UnorderedList spacing={3} fontSize={15} mb={{ base: 10, md: 20 }} pl={2}>
-              {FocusItems.map((focus, index) => (
+              {focusItems.map((focus, index) => (
                 <ListItem key={index}>
                   <Flex align="flex-start"  mt={6}>
                     <Box mr={2}>
@@ -86,43 +67,6 @@ const AboutFocus = () => {
 
           </Box>
         </GridItem>
-
-        {/* <GridItem>
-          {GoalItems.map((goal, index) => (
-            <SimpleGrid columns={{ base: 1, md: 2 }}  gap="20px" mt={{base: 5, md: 10}}>
-                 <Box 
-              border="1px solid #4990a6ff" 
-              borderRadius="12px"
-              p="25px"
-              display="flex"
-              flexDirection="column"
-              gap="16px"
-            >
-              <Box>
-                <Box 
-                  border="1px solid #4990a6ff" 
-                  borderRadius="8px" 
-                  p="18px"
-                  mb={10}
-                  display="inline-flex"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  {goal.icon}
-                </Box>
-                <Box color="white" fontSize="16px" fontWeight="600" mb="8px">
-                  {goal.title}
-                </Box>
-                <Box color="rgba(255,255,255,0.6)" fontSize="14px">
-                  {goal.description}
-                </Box>
-              </Box>
-            </Box>
-            </SimpleGrid>
-
-          ))}
-        </GridItem> */}
-
 
         <GridItem>
           <SimpleGrid

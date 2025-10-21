@@ -2,7 +2,6 @@ import { Box, GridItem, Image, SimpleGrid } from "@chakra-ui/react";
 import GetStartedBtn from "@/components/GetStartedBtn";
 
 
-
 const ProductHero = () => {;
   return (
     <Box className="documentation-card" mb={10}>

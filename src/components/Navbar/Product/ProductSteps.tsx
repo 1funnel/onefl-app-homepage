@@ -1,8 +1,7 @@
 import { Box, Flex} from "@chakra-ui/react";
 
-
 const ProductSteps = () => {
-  const Items = [
+  const items = [
     {
       number: "1",
       title: "Integrate Once",
@@ -29,7 +28,7 @@ const ProductSteps = () => {
         mb={{ base: 2, md: 14 }}
         px={{ base: 6, md: 10 }}
       >
-        {Items.map((Items, index) => (
+        {items.map((items, index) => (
           <Box key={index} className="step-item" textAlign="center" maxW="300px">
             <Box className="step-number"
              w="50px" 
@@ -43,10 +42,10 @@ const ProductSteps = () => {
              fontWeight="600" 
              mx="auto" mb={10}
             >
-              {Items.number}
+              {items.number}
             </Box>
-            <Box fontSize="24px" fontWeight="600" mb={3}>{Items.title}</Box>
-            <Box fontSize="16px" opacity={0.7} lineHeight="1.6">{Items.description}</Box>
+            <Box fontSize="24px" fontWeight="600" mb={3}>{items.title}</Box>
+            <Box fontSize="16px" opacity={0.7} lineHeight="1.6">{items.description}</Box>
           </Box>
         ))}
       </Flex>

@@ -1,12 +1,8 @@
 import { Box, GridItem, Image, SimpleGrid, UnorderedList, ListItem, Flex } from "@chakra-ui/react";
 import GetStartedBtn from "@/components/GetStartedBtn";
 
-type item = {
-  title: string;
-  description: string;
-}
 
-const benefitItems: item[]= [
+const benefitItems= [
   {
     title: "One Integration, Many Services",
     description:
