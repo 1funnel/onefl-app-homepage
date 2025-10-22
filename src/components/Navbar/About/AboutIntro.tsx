@@ -91,7 +91,7 @@ const AboutIntro = () => {
               
               <Box
                 width="100%"
-                height="350px"
+                height={{base: "250px", md: "350px"}}
                 bg="rgba(255, 255, 255, 0.05)"
                 borderRadius="8px"
                 overflow="hidden"

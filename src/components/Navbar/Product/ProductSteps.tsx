@@ -38,14 +38,14 @@ const ProductSteps = () => {
              display="flex" 
              alignItems="center" 
              justifyContent="center" 
-             fontSize="25px" 
+             fontSize={{base: "20px", md: "25px"}}
              fontWeight="600" 
              mx="auto" mb={10}
             >
               {items.number}
             </Box>
-            <Box fontSize="24px" fontWeight="600" mb={3}>{items.title}</Box>
-            <Box fontSize="16px" opacity={0.7} lineHeight="1.6">{items.description}</Box>
+            <Box fontSize={{base: "20px", md: "25px"}} fontWeight="600" mb={3}>{items.title}</Box>
+            <Box fontSize={{base: "13px", md: "16px"}} opacity={0.7} lineHeight="1.6">{items.description}</Box>
           </Box>
         ))}
       </Flex>

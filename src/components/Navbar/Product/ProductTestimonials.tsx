@@ -38,19 +38,26 @@ const responsive = {
     breakpoint: { max: 3000, min: 1024 },
     items: 4,
     slidesToSlide: 1,
-    partialVisibilityGutter: 10,
+    partialVisibilityGutter: 20,
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
+  laptop: {
+    breakpoint: { max: 1200, min: 992 },
     items: 3,
     slidesToSlide: 1,
-    partialVisibilityGutter: 10,
+    partialVisibilityGutter: 20,
+  },
+  tablet: {
+    breakpoint: { max: 992, min: 600 },
+    items: 2,
+    slidesToSlide: 1,
+    partialVisibilityGutter: 20,
+    
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
     slidesToSlide: 1,
-    partialVisibilityGutter: 10,
+    partialVisibilityGutter: 20,
   },
 };
 
@@ -64,7 +71,7 @@ const ProductTestimonials = () => {
         <span className="special-highlight">Power</span>
       </Box>
 
-      <Box className="testimonial-slides">
+      <Box className="testimonial-slides" width="100%" overflow="hidden">
         <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={false}>
           {testimonials.map((testimonial, index) => (
             <ProductTestimonialCard key={index} testimonial={testimonial} />

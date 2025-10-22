@@ -281,6 +281,10 @@ body {
   }
 }
 
+.carousel-item-padding {
+  padding: 0 10px; /* Adjust spacing as needed */
+}
+
 .product-testimonial-card {
   border: 1px solid var(--one-fl-colors-brand-secondary700);
   padding: 20px;
@@ -304,10 +308,11 @@ body {
 
   .testimonial-card {
     border: 1px solid var(--one-fl-colors-brand-secondary700);
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 95%;
     height: 300px;
     cursor: pointer;
@@ -459,7 +464,7 @@ footer.app-footer {
 
 @media screen and (max-width: 850px) {
   .app-title {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
 
   .testimonial-card {
@@ -469,10 +474,30 @@ footer.app-footer {
   .title {
     font-size: 3rem;
 
+  } 
+  
+  .pre-highlight-card {
+    font-size: 10px;
   }  
 }
 
 @media (max-width: 480px) {
+  .product-testimonial-card {
+    width: 250px;
+    height: 180px;
+  }
+  .faqs-section .faqs .faq-item .faq-body {
+    padding-left: 45px;
+  }  
+
+  .faqs-section .faqs .faq-item .faq-header .sn {
+    margin-right: 5px;
+  }
+
+  .faqs-section .faqs .faq-item .faq-header {
+    gap: 5px;
+  }
+
   .hero-section .title {
     font-size: 1.5rem;
     width: 100%;
@@ -529,6 +554,10 @@ footer.app-footer {
 
   .documentation-section .brief {
     margin-bottom: 10px;
+  }
+
+  .documentation-section .pre-highlight-card {
+    font-size: 10px;
   }
 
   .app-footer .app-title{
