@@ -11,10 +11,7 @@ const ProductTestimonialCard = (props: Props) => {
   const { testimonial } = props;
 
   return (
-    <Box className="product-testimonial-card"      
-      mr={2}
-      mb={{base: 6, md: 2}}        
-    >
+    <Box className="product-testimonial-card">
       <Box className="title" fontWeight="bold"
         w="50px" 
         h="50px" 

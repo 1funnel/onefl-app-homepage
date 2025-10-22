@@ -89,19 +89,19 @@ export const ProductFeatureTab = ({ item }: { item: FeatureItem }) => {
 
   return (
     <Box color="white">
-      <Box fontSize="25px" fontWeight="bold" mb="2">
+      <Box fontSize={{base: "20px", md: "35px"}} fontWeight="bold" mb="2">
         {item.title}
       </Box>
-      <Box fontSize="md" color="gray.300" mb="4">
+      <Box fontSize={{base: "14px", md: "18px"}} color="gray.300" mb="4">
         {item.subtitle}
       </Box>
-      <Box fontSize="16px" mb="4">
+      <Box fontSize={{base: "14px", md: "18px"}} mb="4">
         {item.description}
       </Box>
-      <Box fontSize="16px" fontWeight="semibold" mb="2">
+      <Box fontSize={{base: "14px", md: "18px"}} fontWeight="semibold" mb="2">
         Features:
       </Box>
-      <UnorderedList spacing={2} fontSize="16px" mb={{base: 10, md: 20}}>
+      <UnorderedList spacing={2} fontSize={{base: "14px", md: "20px"}} mb={{base: 10, md: 20}}>
         {item.features.map((feature, index) => (
           <ListItem key={index}>{feature}</ListItem>
         ))}
