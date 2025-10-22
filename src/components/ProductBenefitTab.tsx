@@ -44,7 +44,7 @@ const FeatureTab = (props: Props) => {
       <Box className="content">
         <Box className="title" cursor="pointer" onClick={handleClick}>{tab.title}</Box>
         {selected && (
-          <Box className="description" mb={6}>{tab.description}</Box>
+          <Box className="description">{tab.description}</Box>
         )}
       </Box>
     </Box>

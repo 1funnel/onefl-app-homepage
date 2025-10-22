@@ -124,12 +124,13 @@ const ProductIntro = () => {
           onClick={() => carouselRef.current?.previous()}
           bg="transparent"
           colorScheme="none" 
-          _hover={{ bg: "whiteAlpha.200", borderColor: "white" }}
+          _hover={{ bg: "#17172fff", borderColor: "white" }}
           _active={{ bg: "whiteAlpha.300" }}
           _focus={{ boxShadow: "none" }}
           height="auto"
-          border="1px solid white"
+          border="1px solid #37376fff"
           padding="5px"
+          rounded="full"
         >
           <ArrowLeft size={28} variant="TwoTone" color="white" />
         </Button>
@@ -139,12 +140,13 @@ const ProductIntro = () => {
           bg="transparent"
           p={0}
           colorScheme="none" 
-          _hover={{ bg: "whiteAlpha.200", borderColor: "white" }}
+          _hover={{ bg: "#17172fff", borderColor: "white" }}
           _active={{ bg: "whiteAlpha.300" }}
           _focus={{ boxShadow: "none" }}
           height="auto"
-          border="1px solid white"
+          border="1px solid #37376fff"
           padding="5px"
+          rounded="full"
         >
           <ArrowRight size={28} variant="TwoTone" color="white" />
         </Button>
