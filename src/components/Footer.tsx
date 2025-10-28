@@ -16,7 +16,7 @@ const footerMenu = [
     links: [
       {
         title: "About",
-        href: "#",
+        href: "/about",
       },
       {
         title: "Blog",
@@ -33,7 +33,7 @@ const footerMenu = [
     links: [
       {
         title: "Help Center",
-        href: "#",
+        href: "/contact",
       },
       {
         title: "Platform Status",
@@ -71,7 +71,7 @@ const footerMenu = [
       },
       {
         title: "Help Center",
-        href: "#",
+        href: "/contact",
       },
       {
         title: "Security",

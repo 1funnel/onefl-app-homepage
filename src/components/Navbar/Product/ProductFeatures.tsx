@@ -29,7 +29,10 @@ const ProductTab = () => {
       {isSmallScreen ? (
         <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px" my={{base: "10px", md: "100px"}}>
           <GridItem>
-            <Flex justify="flex-start" mb={4}>
+            <Flex justify="flex-start" mb={4} gap={3}>
+              <Box  color="white"  display="flex" alignItems="center">
+                Click to view next feature
+              </Box>
               <IconButton
                 aria-label="Next feature"
                 icon={<ArrowRight size={iconSize} variant="TwoTone" color="white" />}

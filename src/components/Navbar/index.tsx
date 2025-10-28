@@ -26,12 +26,14 @@ export default function Navbar() {
       <Container fluid>
         <Flex h={100} alignItems="center" justifyContent="space-between">
           <HStack spacing={2} alignItems="center">
-            <Box
-              as="img"
-              src="/images/app-logo-light.svg"
-              alt="OneFunnel Logo"
-              h="50"
-            />
+            <Link href="/">
+              <Box
+                as="img"
+                src="/images/app-logo-light.svg"
+                alt="OneFunnel Logo"
+                h="50"
+              />
+            </Link>
             ƒ
           </HStack>
 
