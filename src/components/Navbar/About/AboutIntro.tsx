@@ -17,7 +17,7 @@ const teamMembers = [
     image: "/images/team-frame.svg"
   },
   {
-    name: "Olufunmilayo Tijabosho",
+    name: "Olufunmilayo Tugbobo",
     designation: "Company Secretary",
     image: "/images/team-frame.svg"
   },
@@ -30,29 +30,30 @@ const AboutIntro = () => {
     <Box className="testimonials">
         <Box>
             <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
-                <GridItem>
-                  <Box className="brief">
-                    <Box className="content" 
-                     marginBottom={{ base: "20px", md: "40px", lg: "70px" }}
-                     fontWeight="500"
-                     marginTop={{base: 0, md: 10}}
-                    >
-                      Behind every seamless integration is a team of fintech innovators,
-                      product experts, and engineers dedicated to shaping Africa's financial future.
-                    </Box>
-        
-                  </Box>
-                </GridItem>
-                <GridItem>
-                    <Box className="brief" textAlign={{ base: "left", md: "right" }}>
+              <GridItem>
+                    <Box className="brief">
                       <Box color="brand.primary700" fontSize="20px" marginBottom="10px" fontWeight="bold">
-                        MEET OUR TEAM -
+                        MEET OUR TEAM
                       </Box>  
         
                       <Box className="app-title gradient-text">
                         Driven by Expertise and Passion
                       </Box>
                     </Box>  
+                </GridItem>
+                <GridItem>
+                  <Box className="brief">
+                    <Box className="content" 
+                     marginBottom={{ base: "20px", md: "40px", lg: "70px" }}
+                     fontWeight="500"
+                     marginTop={{base: 0, md: 10}}
+                     textAlign={{ base: "left", md: "right" }}
+                    >
+                      Behind every seamless integration is a team of fintech innovators,
+                      product experts, and engineers dedicated to shaping Africa's financial future.
+                    </Box>
+        
+                  </Box>
                 </GridItem>
             </SimpleGrid>
         </Box>

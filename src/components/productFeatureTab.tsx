@@ -15,7 +15,7 @@ export const FeatureTab: FeatureItem[] = [
   {
     id: "SMS & USSD",
     title: "Messaging Infrastructure (SMS & USSD)",
-    subtitle: "Reach Customers Everywhere, instantly",
+    subtitle: "Reach Customers Everywhere, Instantly",
     description:
       "Engage users through secure SMS and USSD channels with enterprise-grade reliability. Send real-time notifications, authentication codes, and service updates — and track delivery with full visibility.",
     features: [
@@ -45,7 +45,7 @@ export const FeatureTab: FeatureItem[] = [
     title: "Bill Payments",
     subtitle: "Simplify How Customers Pay Bills",
     description:
-      "From electricity to TV, internet subscriptions,  and more manage multiple billers through a single API. Offer seamless, real-time payment experiences your users can trust.",
+      "From electricity to TV, internet subscriptions, and more, manage multiple billers through a single API. Offer seamless, real-time payment experiences your users can trust.",
     features: [
       "Support for multiple billers and service types",
       "Real-time confirmation and reconciliation",
@@ -59,7 +59,7 @@ export const FeatureTab: FeatureItem[] = [
     title: "Payments & Transfers",
     subtitle: "Move Money Securely, Reliably, and in Real Time",
     description:
-      "Process inflows, payouts, and fund transfers through one unified infrastructure. Built for banks, MFBs, Mobile Money Operators, Fintechs and platforms that demand stability, speed and control.",
+      "Process inflows, payouts, and fund transfers through one unified infrastructure. Built for banks, MFBs, Mobile Money Operators, Fintechs, and platforms that demand stability, speed and control.",
     features: [
       "Seamless inflows and payouts",
       "Real-time transaction monitoring and reconciliation",

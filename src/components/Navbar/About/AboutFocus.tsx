@@ -55,10 +55,10 @@ const AboutFocus = () => {
                 <ListItem key={index}>
                   <Flex align="flex-start"  mt={6}>
                     <Box mr={2}>
-                      {focus.title}
+                      {focus.title} : 
                     </Box>
                     <Box flex="1">
-                      : {focus.description}
+                      {focus.description}
                     </Box>
                   </Flex>
                 </ListItem>

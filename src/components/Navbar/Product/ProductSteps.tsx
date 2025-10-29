@@ -5,7 +5,7 @@ const ProductSteps = () => {
     {
       number: "1",
       title: "Integrate Once",
-      description: "Connect to One Funnel's API (circle back to this)"
+      description: "Connect to OneFunnel's API (circle back to this)"
     },
     {
       number: "2",

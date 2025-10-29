@@ -6,7 +6,7 @@ const contacts = [
     icon: <MessageText size="28" color="#00C2FF" variant="Bulk" />,
     title: "Email",
     description: "Our support team is always ready to help with technical or business enquiries.",
-    linkText: "allofus@1funnel.ng",
+    linkText: "support@1funnel.ng",
     href: "mailto:support@1funnel.ng",
   },
   {

@@ -20,7 +20,7 @@ const ProductTab = () => {
       <Box textAlign="center" mb={8}>
         <Box className="app-title gradient-text" mt={4}>
           Growing your Platform is Hard,<br/>
-          <Box as="span" className="special-highlight">One Funnel{" "}</Box>
+          <Box as="span" className="special-highlight">OneFunnel{" "}</Box>
           Makes it Easier
         </Box>
       </Box>

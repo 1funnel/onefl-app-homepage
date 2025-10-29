@@ -14,7 +14,7 @@ export default function ContactHero() {
           We'd love to hear from you
         </h1>
         <Box className="description">
-          Our support team is available Monday to Friday, 8 AM - 5 PM (WAT) to assist with product inquiries, partnerships, and technical support.
+          Our support team is available <span className="contact-span">Monday to Friday, 8 AM - 5 PM (WAT)</span> to assist with product inquiries, partnerships, and technical support.
           Whether you're a bank, fintech, or developer, we're just a message away.
         </Box>
 
