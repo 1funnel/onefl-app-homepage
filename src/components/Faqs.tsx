@@ -51,7 +51,7 @@ const Faqs = () => {
     <Box className="faqs">
       <Box className="app-title" marginBottom="50px">
         Got Questions? <br />
-        We’ve Got Answers.
+        We’ve Got Answers
       </Box>
 
       <Accordion>
