@@ -10,39 +10,39 @@ import { Add, Minus } from "iconsax-react";
 
 const faqs = [
   {
-    question: "How does One Funnel work?",
+    question: "How does OneFunnel work?",
     answer:
-      "One Funnel is a fintech platform that provides SMS, airtime, bank transfer, and data services to individuals and businesses.",
+      "OneFunnel is a fintech platform that provides SMS, airtime, bank transfer, and data services to individuals and businesses.",
   },
   {
-    question: "Is One Funnel free?",
+    question: "Is OneFunnel free?",
     answer:
-      "One Funnel offers a free trial period, after which users can subscribe to our services at a competitive rate.",
+      "OneFunnel offers a free trial period, after which users can subscribe to our services at a competitive rate.",
   },
   {
-    question: "What services does One Funnel offer?",
+    question: "What services does OneFunnel offer?",
     answer:
-      "One Funnel offers SMS, airtime, bank transfer, and data services to individuals and businesses.",
+      "OneFunnel offers SMS, airtime, bank transfer, and data services to individuals and businesses.",
   },
   {
-    question: "How does One Funnel's bank transfer service work?",
+    question: "How does OneFunnel's bank transfer service work?",
     answer:
-      "One Funnel's bank transfer service allows users to transfer money between different banks and financial institutions in Nigeria.",
+      "OneFunnel's bank transfer service allows users to transfer money between different banks and financial institutions in Nigeria.",
   },
   {
-    question: "What is the purpose of One Funnel's data service?",
+    question: "What is the purpose of OneFunnel's data service?",
     answer:
-      "One Funnel's data service allows users to buy and sell data bundles at a competitive rate.",
+      "OneFunnel's data service allows users to buy and sell data bundles at a competitive rate.",
   },
   {
-    question: "How does One Funnel's SMS service work?",
+    question: "How does OneFunnel's SMS service work?",
     answer:
-      "One Funnel's SMS service allows users to send and receive SMS messages at a competitive rate.",
+      "OneFunnel's SMS service allows users to send and receive SMS messages at a competitive rate.",
   },
   {
-    question: "How does One Funnel's airtime service work?",
+    question: "How does OneFunnel's airtime service work?",
     answer:
-      "One Funnel's airtime service allows users to buy and sell airtime at a competitive rate.",
+      "OneFunnel's airtime service allows users to buy and sell airtime at a competitive rate.",
   },
 ];
 

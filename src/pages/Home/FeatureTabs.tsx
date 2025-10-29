@@ -64,7 +64,7 @@ const FeatureTabs = () => {
   return (
     <Box className="feature-tabs">
       <Box className="gradient-title" width={{ base: "100%", sm: "40%" }}>
-        <p>Why Choose One Funnel?</p>
+        <p>Why Choose OneFunnel?</p>
         <Box className="content-header" >
           Designed to Support Business Growth and Scale       
         </Box>
