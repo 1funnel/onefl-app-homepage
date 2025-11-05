@@ -163,7 +163,13 @@ const Footer = () => {
           <GridItem alignItems="center" justifyItems={{ base: "unset", sm: "flex-end"}}>
             <Flex gap="15px">
               <Link
-                href="https://www.instagram.com/1funnelltd?igsh=MWJ1ZW1uZGM1YjNoMA=="
+                href="https://www.instagram.com/onefunnel.ng?igsh=ZDhob2ZseXU2eGhs&utm_source=qr"
+                isExternal
+              >
+                <Image src="/images/Instagram.svg"  alt="instagram icon" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/share/16VLNpd87P/?mibextid=wwXIfr"
                 isExternal
               >
                 <Image src="/images/facebook.svg"  alt="facebook icon" />
