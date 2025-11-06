@@ -74,7 +74,7 @@ const ProductIntro = () => {
         </Box>
 
         <Box width={{ base: "100%", sm: "40%" }}>
-          One Funnel is a unified fintech infrastructure that connects your business to multiple services via a single integration.
+          OneFunnel is a unified fintech infrastructure that connects your business to multiple services via a single integration.
            Optimize your backend with our simplified stack for growth and scale,  innovation, and impeccable service to your customers.
         </Box>
 

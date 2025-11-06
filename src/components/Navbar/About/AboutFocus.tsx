@@ -1,5 +1,5 @@
 import { Box, GridItem, SimpleGrid, UnorderedList, ListItem, Flex } from "@chakra-ui/react";
-import { Eye, Share } from "iconsax-react";
+import { Eye, Share, Level } from "iconsax-react";
 
 
 const focusItems = [
@@ -55,10 +55,10 @@ const AboutFocus = () => {
                 <ListItem key={index}>
                   <Flex align="flex-start"  mt={6}>
                     <Box mr={2}>
-                      {focus.title}
+                      {focus.title} : 
                     </Box>
                     <Box flex="1">
-                      : {focus.description}
+                      {focus.description}
                     </Box>
                   </Flex>
                 </ListItem>
@@ -92,7 +92,7 @@ const AboutFocus = () => {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <Eye size={24} color="#4990a6ff" />
+                  <Level size={24} color="#4990a6ff" />
                 </Box>
                 <Box color="white" fontSize="16px" fontWeight="600" mb="8px">
                   Our Mission

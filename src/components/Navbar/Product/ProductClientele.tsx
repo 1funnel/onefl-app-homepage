@@ -15,7 +15,7 @@ const ProductClientele = () => {
             </Box>
           </Box>
           <Box mt={4}>
-            What used to take months, now takes days with One Funnel.
+            What used to take months, now takes days with One Funnel
           </Box>
         </Box>
       </Box>

@@ -1,5 +1,4 @@
 import { Box, Button, Container, Flex, useBreakpointValue } from "@chakra-ui/react";
-import { DOCUMENTATION_URL } from "@/utils/constants";
 import { ArrowRight } from "iconsax-react";
 
 export default function ContactHero() {
@@ -15,7 +14,7 @@ export default function ContactHero() {
           We'd love to hear from you
         </h1>
         <Box className="description">
-          Our support team is available Monday to Friday, 8 AM - 5 PM (WAT) to assist with product inquiries, partnerships, and technical support.
+          Our support team is available <span className="contact-span">Monday to Friday, 8 AM - 5 PM (WAT)</span> to assist with product inquiries, partnerships, and technical support.
           Whether you're a bank, fintech, or developer, we're just a message away.
         </Box>
 
@@ -35,11 +34,12 @@ export default function ContactHero() {
             _hover={{ bg: "#17172fff" }}
             rounded="full"
             as="a"
-            href={DOCUMENTATION_URL}
+            href= "tel:+234 702 517 4376"
             target="_blank"
             size={{ base: "sm", md: "md", lg: "lg" }}
             px={{ base: 4, md: 6, lg: 8 }}
             py={{ base: 2, md: 3, lg: 4 }}
+            
           >
             <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Request A Call</Box>
             <ArrowRight size={iconSize} variant="TwoTone" color="white" />
@@ -52,7 +52,7 @@ export default function ContactHero() {
             _hover={{ bg: "brand.primary600" }}
             rounded="full"
             as="a"
-            href={DOCUMENTATION_URL}
+            href="#"
             target="_blank"
             size={{ base: "sm", md: "md", lg: "lg" }}
             px={{ base: 4, md: 6, lg: 8 }}
