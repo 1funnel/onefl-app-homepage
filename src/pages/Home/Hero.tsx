@@ -14,7 +14,7 @@ export default function Hero() {
         <Box className="description">
           Managing multiple APIs slows you down.
           <br/>
-          One Funnel unifies everything
+          OneFunnel unifies everything
           in real time, from KYC to different messaging options, detailed reporting, BVN validation & NIN verification, and more.
           <br/>
           A trial is all you need

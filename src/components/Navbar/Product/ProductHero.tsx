@@ -22,9 +22,11 @@ const ProductHero = () => {;
              marginBottom={{ base: "20px", md: "40px", lg: "70px" }}
              padding="10px 20px 0 0"
             >
-              Whether you're a bank expanding your digital services or a fintech building for scale. OneFunnel connects you to 
-              everything you need from payments and KYC to messaging, airtime and bill payments through one powerful integration.<br/><br/>
-              Simplify your backend, reudce your vendor cmplexity and accerlerate innovation with Africa's trusted API infrastructure. 
+              Whether you’re a bank expanding your digital services or a fintech building for scale, 
+              OneFunnel connects you to everything you need, from payments and KYC to messaging, airtime, 
+              and bill payments, through one powerful integration.
+              <br/><br/>
+              Simplify your backend, reduce vendor complexity, and accelerate innovation with Africa’s trusted API infrastructure.
             </Box>
 
             <GetStartedBtn />

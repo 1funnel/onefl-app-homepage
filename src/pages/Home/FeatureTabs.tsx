@@ -38,7 +38,7 @@ const FeatureTabs = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   
   // check to see if it's a large screen
-  const isLargeScreen = useBreakpointValue({ base: false, md: true });
+  const isLargeScreen = useBreakpointValue({ base: false, xl: true });
   
   // hover on large screen and select on small screen
   const activeIndex = isLargeScreen ? hoveredIndex : selectedIndex;
@@ -64,7 +64,7 @@ const FeatureTabs = () => {
   return (
     <Box className="feature-tabs">
       <Box className="gradient-title" width={{ base: "100%", sm: "40%" }}>
-        <p>Why Choose One Funnel?</p>
+        <p>Why Choose OneFunnel?</p>
         <Box className="content-header" >
           Designed to Support Business Growth and Scale       
         </Box>
@@ -94,8 +94,8 @@ const FeatureTabs = () => {
 
         <Box className="shared-image" flex="1">
           <Image
-            src="/images/hero-img.svg"
-            height="250px"
+            src="/images/about-hero.svg"
+            height="350px"
             objectFit="contain"
             transform={activeIndex >= 0 ? `translateY(${activeIndex * 20}px)` : "translateY(0)"}
             transition="transform 0.3s ease-in-out"

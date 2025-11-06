@@ -6,27 +6,27 @@ const benefitItems= [
   {
     title: "One Integration, Many Services",
     description:
-      "No juggling multiple vendors",
+      "No juggling multiple vendors.",
   },
   {
     title: "Reliability & Uptime",
     description:
-      "99.9% youtube with bank-level security.",
+      "99.9% uptime with bank-level security.",
   },
   {
     title: "Speed to Market",
     description:
-      "Reduce time spent integrating with multiple systems",
+      "Reduce time spent integrating with multiple systems.",
   },
   {
     title: "Unified Reporting & Analytics",
     description:
-      "Get valuable insights across every service. ",
+      "Get valuable insights across every service.",
   },
   {
     title: "Scalable & Modular",
     description:
-      "Expand at your own pace",
+      "Expand at your own pace.",
   },
 ]  
 
@@ -43,18 +43,22 @@ const ProductBenefits = () => {;
 
             <Box className=" gradient-text" mt={2} mb={8} fontSize={{base: 25, md: 30, lg: 35}} fontWeight="bold">
               Why Choose <br/>
-              <Box as="span" className="special-highlight">One Funnel</Box>
+              <Box as="span" className="special-highlight">OneFunnel</Box>
+            </Box>
+
+            <Box className=" gradient-text" fontSize={{base: 17, lg: 20}} mb={2} fontWeight="bold">
+               Infrastructure That Scales With You 
             </Box>
 
             <Box className=" gradient-text">
-              A platform built for reliability,  flexibility, and performance so you can focus on GROWTH not integrations. 
+              A platform built for reliability,  flexibility, and performance so you can focus on GROWTH, not integrations. 
             </Box>
 
             <UnorderedList spacing={3} fontSize="16px" mb={{ base: 10, md: 20 }} pl={2}>
               {benefitItems.map((benefit, index) => (
                 <ListItem key={index}>
                   <Flex align="flex-start" flexDirection={{ base: "column", lg: "row" }} mt={6}>
-                    <Box mr={2}>
+                    <Box mr={2} fontWeight="semibold">
                       {benefit.title}
                     </Box>
                     <Box flex="1">

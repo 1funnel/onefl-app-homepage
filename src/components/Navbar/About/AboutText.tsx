@@ -14,7 +14,7 @@ const AboutText = () => {
             <span className="special-highlight">Confidence</span>
           </Box>
           <Box mb={10}>
-            Join the OneFunnel network today and experience seamless integration like never before.
+            Join the OneFunnel network today and experience seamless integration like never before
           </Box>
 
           <GetStartedBtn />

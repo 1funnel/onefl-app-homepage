@@ -9,7 +9,7 @@ const AboutClientele = () => {
     <>
       <Box className="trusted-by">
         <Box className="content">
-          <Box className="content-header">Trusted by Leading Financial Institutions and Technology Partners Across Africa. </Box>
+          <Box className="content-header">Trusted by Leading Financial Institutions and Technology Partners Across Africa </Box>
           <Box mt={2}>From banks to microfinance institutions and fast-growing fintech startups,
           OneFunnel provides the infrastructure trusted to power seamless transactions,
           real-time verification, and essential digital services</Box>

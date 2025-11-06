@@ -15,8 +15,8 @@ const ProductText = () => {
             When You Can Do It {" "}
             <span className="special-highlight">All In One?</span>
           </Box>
-          <Box mb={10}>With One Funnel, you get a single, secure integration that connects<br/>
-             your business to the APIs powering Africa's digital future.
+          <Box mb={10}>With OneFunnel, you get a single, secure integration that connects<br/>
+             your business to the APIs powering Africa's digital future
           </Box>
 
           <Button
