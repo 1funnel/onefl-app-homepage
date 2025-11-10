@@ -421,13 +421,15 @@ footer.app-footer {
   background: $brand-dark-gradient-invert;
   padding: 40px 5px;
 
+  &.invert {
+    background: $brand-dark-gradient;
+  }
+
   .app-title {
     font-size: 25px;
     font-weight: 500;
     line-height: 1.1;
   }
-
-  
 
   .menu-header {
     margin-bottom: 10px;

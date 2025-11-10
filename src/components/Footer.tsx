@@ -7,8 +7,8 @@ import {
   SimpleGrid,
   Link
 } from "@chakra-ui/react";
-// import Container from "./Container";
 import GetStartedBtn from "./GetStartedBtn";
+import { useLocation } from "react-router-dom";
 
 const footerMenu = [
   {
@@ -82,8 +82,11 @@ const footerMenu = [
 ];
 
 const Footer = () => {
+  const location = useLocation();
+  const isInvertedPage = location.pathname === "/products" || location.pathname === "/contact";
+
   return (
-    <footer className="app-footer">
+    <footer className={`app-footer ${isInvertedPage ? "invert" : ""}`}>
       <Container>
 
     <SimpleGrid

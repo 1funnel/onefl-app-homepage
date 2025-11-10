@@ -4,7 +4,7 @@ import ProductHero from "@/components/Navbar/Product/ProductHero";
 import ProductTab from "@/components/Navbar/Product/ProductFeatures";
 import ProductClientele from "@/components/Navbar/Product/ProductClientele";
 import ProductBenefits from "@/components/Navbar/Product/ProductBenefits";
-import ProductTestimonials from "@/components/Navbar/Product/ProductTestimonials";
+// import ProductTestimonials from "@/components/Navbar/Product/ProductTestimonials";
 import ProductText from "@/components/Navbar/Product/ProductText";
 import ProductSteps from "@/components/Navbar/Product/ProductSteps";
 
@@ -41,13 +41,13 @@ const Products = () => {
         </Container>
       </Box>
 
-      <Box className="section testimonials-section dark-section-invert">
+      {/* <Box className="section testimonials-section dark-section-invert">
         <Container>
           <ProductTestimonials />
         </Container>
-      </Box>
+      </Box> */}
 
-      <Box className="section product-clientele-section dark-section">
+      <Box className="section product-clientele-section dark-section-invert">
         <Container>
           <ProductText />
         </Container>
