@@ -32,7 +32,7 @@ const ProductText = () => {
             px={{ base: 4, md: 6, lg: 8 }}
             py={{ base: 2, md: 3, lg: 4 }}
           >
-            <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Get Started With One Funnel</Box>
+            <Box marginRight="10px" fontSize={{ base: "sm", md: "md", lg: "lg" }}>Get Started With OneFunnel</Box>
             <ArrowRight size={iconSize} variant="TwoTone" color="white" />
           </Button>
         </Box>

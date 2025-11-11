@@ -19,7 +19,7 @@ const contacts = [
   {
     icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
     title: "Visit Us",
-    description: "41, Industrial Avenue, Yaba, Lagos State. Available for visits on Monday, Wednesday & Friday.",
+    description: "41, Industrial Avenue, Sabo, Yaba, Lagos State. Available for visits on Monday, Wednesday & Friday.",
   },
 ];
 

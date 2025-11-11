@@ -37,13 +37,9 @@ const ProductBenefits = () => {;
       <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
         <GridItem>
           <Box className="brief">
-            <Box className="special-highlight" fontSize={{base: 15, md: 20, lg: 25}} fontWeight="bold">
-              - WHY US ?
-            </Box>
-
             <Box className=" gradient-text" mt={2} mb={8} fontSize={{base: 25, md: 30, lg: 35}} fontWeight="bold">
               Why Choose <br/>
-              <Box as="span" className="special-highlight">OneFunnel</Box>
+              <Box as="span" className="special-highlight">OneFunnel ?</Box>
             </Box>
 
             <Box className=" gradient-text" fontSize={{base: 17, lg: 20}} mb={2} fontWeight="bold">
