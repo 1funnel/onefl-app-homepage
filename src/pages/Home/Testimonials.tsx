@@ -66,7 +66,6 @@ const Testimonials = () => {
   return (
     <Box className="testimonials">
       <Box className="special-highlight-title">Testimonials</Box>
-
       <Box className="app-title gradient-title" marginBottom="10px">
         Hear what <br />
         our clients say

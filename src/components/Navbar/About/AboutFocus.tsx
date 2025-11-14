@@ -32,7 +32,7 @@ const AboutFocus = () => {
         <GridItem>
           <Box className="brief">
             <Box color="brand.primary700" fontSize={{base: 15, lg: 20}} marginBottom="10px" fontWeight="bold">
-               - OUR FOCUS
+                OUR FOCUS
             </Box>  
 
             <Box className="gradient-text" fontSize={{base: 20, md: 25, lg: 30}} fontWeight="bold" width={{base: "100%", md : "60%"}}>

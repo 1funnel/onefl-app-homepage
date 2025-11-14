@@ -73,7 +73,7 @@ export const FeatureTab: FeatureItem[] = [
     title: "KYC & Verification",
     subtitle: "Verify Customers and Businesses in Seconds",
     description:
-      "Onboard users faster with instant BVN & NIN verification. One Funnel connects to trusted data sources to help you stay compliant and prevent fraud.",
+      "Onboard users faster with instant BVN & NIN verification. OneFunnel connects to trusted data sources to help you stay compliant and prevent fraud.",
     features: [
       "BVN and NIN verification",
       "Real-time identity checks",

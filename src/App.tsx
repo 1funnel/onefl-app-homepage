@@ -10,18 +10,20 @@ import Products from "./pages/Home/products";
 function App() {
   return (
     <>
-      <Navbar />
-
       <BrowserRouter>
+
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
         </Routes>
-      </BrowserRouter>
 
-      <Footer />
+        <Footer />
+
+      </BrowserRouter>
     </>
   );
 }
