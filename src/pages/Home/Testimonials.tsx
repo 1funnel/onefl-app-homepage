@@ -1,8 +1,8 @@
 import TestimonialCard from "@/components/TestimonialCard";
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Carousel from "react-multi-carousel";
 import { useRef } from "react";
-import { ArrowRight, ArrowLeft } from "iconsax-react";
+// import { ArrowRight, ArrowLeft } from "iconsax-react";
 
 const testimonials = [
   {
@@ -72,14 +72,16 @@ const Testimonials = () => {
       </Box>
 
       <Box className="testimonial-slides">
-        <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={false}>
+        <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={true}
+          autoPlay={true} autoPlaySpeed={50} customTransition="all 1s ease" transitionDuration={2000} 
+        >
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} testimonial={testimonial} />
           ))}
         </Carousel>
       </Box>
 
-        <Flex
+        {/* <Flex
           justifyContent="space-between"
           alignItems="center"
           mt={6}
@@ -116,7 +118,7 @@ const Testimonials = () => {
           >
             <ArrowRight size={28} variant="TwoTone" color="white" />
           </Button>
-        </Flex>
+        </Flex> */}
     </Box>
   );
 };

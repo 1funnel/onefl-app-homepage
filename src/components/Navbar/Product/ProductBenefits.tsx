@@ -1,6 +1,8 @@
 import { Box, GridItem, Image, SimpleGrid, UnorderedList, ListItem, Flex } from "@chakra-ui/react";
 import GetStartedBtn from "@/components/GetStartedBtn";
+import { motion } from "framer-motion";
 
+const MotionGridItem = motion(GridItem);
 
 const benefitItems= [
   {
@@ -35,7 +37,12 @@ const ProductBenefits = () => {;
   return (
     <Box className="documentation-card">
       <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
-        <GridItem>
+        <MotionGridItem
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Box className="brief">
             <Box className=" gradient-text" mt={2} mb={8} fontSize={{base: 25, md: 30, lg: 35}} fontWeight="bold">
               Why Choose <br/>
@@ -68,8 +75,13 @@ const ProductBenefits = () => {;
             <GetStartedBtn />
 
           </Box>
-        </GridItem>
-        <GridItem>
+        </MotionGridItem>
+        <MotionGridItem
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut"}}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Box className="content">
             <Image
               src="/images/about-hero.svg"
@@ -78,7 +90,7 @@ const ProductBenefits = () => {;
               mt={{base: 4, md: 16}}
             />
           </Box>
-        </GridItem>
+        </MotionGridItem>
       </SimpleGrid>
     </Box>
   );
