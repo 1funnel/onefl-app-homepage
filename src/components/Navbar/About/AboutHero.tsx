@@ -1,12 +1,21 @@
 import { Box, GridItem, Image, SimpleGrid } from "@chakra-ui/react";
 import GetStartedBtn from "@/components/GetStartedBtn";
+import { motion } from "framer-motion";
+
+const MotionGridItem = motion(GridItem);
+
 
 
 const AboutHero = () => {;
   return (
     <Box className="documentation-card">
       <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
-        <GridItem>
+         <MotionGridItem
+          initial={{ opacity: 0, y: -60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Box className="brief">
             <Box className="pre-highlight-card">
               About Us
@@ -28,8 +37,13 @@ const AboutHero = () => {;
             <GetStartedBtn />
 
           </Box>
-        </GridItem>
-        <GridItem>
+        </MotionGridItem>
+         <MotionGridItem
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut"}}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Box className="content">
             <Image
               src="/images/about-hero.svg"
@@ -37,7 +51,7 @@ const AboutHero = () => {;
               width="100%"
             />
           </Box>
-        </GridItem>
+        </MotionGridItem>
       </SimpleGrid>
     </Box>
   );

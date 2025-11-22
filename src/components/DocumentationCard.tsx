@@ -1,13 +1,21 @@
 import { DOCUMENTATION_URL } from "@/utils/constants";
 import { Box, Button, GridItem, Image, SimpleGrid, useBreakpointValue} from "@chakra-ui/react";
 import { ArrowRight } from "iconsax-react";
+import { motion } from "framer-motion";
+
+const MotionGridItem = motion(GridItem);
 
 const DocumentationCard = () => {
   const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 }) ?? 18;
   return (
     <Box className="documentation-card">
       <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
-        <GridItem>
+        <MotionGridItem
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Box className="brief">
             <Box className="pre-highlight-card">
               Access Multiple Services with One Smart API connection
@@ -39,8 +47,13 @@ const DocumentationCard = () => {
               <ArrowRight size={iconSize} variant="TwoTone" color="white" />
             </Button>
           </Box>
-        </GridItem>
-        <GridItem>
+        </MotionGridItem>
+        <MotionGridItem
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0, ease: "easeOut"}}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Box className="content">
             <Image
               src="/images/api-doc-code-bg.png"
@@ -48,7 +61,7 @@ const DocumentationCard = () => {
               width="100%"
             />
           </Box>
-        </GridItem>
+        </MotionGridItem>
       </SimpleGrid>
     </Box>
   );
