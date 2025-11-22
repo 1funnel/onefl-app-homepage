@@ -1,6 +1,6 @@
 import ProductCard from "@/components/ProductCard";
-import { Box, Button, Flex, useBreakpointValue } from "@chakra-ui/react";
-import { Bank, Messages, Mobile, Receipt1, SecurityUser, ArrowRight, ArrowLeft } from "iconsax-react";
+import { Box, Button, useBreakpointValue } from "@chakra-ui/react";
+import { Bank, Messages, Mobile, Receipt1, SecurityUser, ArrowRight } from "iconsax-react";
 import Carousel from "react-multi-carousel";
 import { DOCUMENTATION_URL } from "@/utils/constants";
 import { useRef } from "react";
@@ -60,6 +60,18 @@ const responsive = {
 const ProductIntro = () => {
   const iconSize = useBreakpointValue({ base: 16, md: 18, lg: 20 });
   const carouselRef = useRef<any>(null);
+  // const resumeTimeout = useRef<any>(null);
+
+  // const pauseAutoPlay = () => {
+  //   carouselRef.current?.stopAutoPlay();
+  //   if (resumeTimeout.current) clearTimeout(resumeTimeout.current);
+  // };
+
+  // const startAutoPlay = () => {
+  //   resumeTimeout.current = setTimeout(() => {
+  //     carouselRef.current?.autoPlay();
+  //   }, 2000);
+  // };
 
 
   return (
@@ -105,7 +117,9 @@ const ProductIntro = () => {
           </Box>
         </Box>
         <Box className="product-briefs" gap="40px">
-          <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={false}>
+          <Carousel ref={carouselRef} responsive={responsive} partialVisible arrows={false} infinite={true}
+           autoPlay={true} autoPlaySpeed={50} customTransition="all 1s ease" transitionDuration={2000} 
+          >
             {productsBrief.map((product) => {
               return <ProductCard product={product} key={product.title} />;
             })}
@@ -113,7 +127,7 @@ const ProductIntro = () => {
         </Box>
       </Box>
 
-      <Flex
+      {/* <Flex
        justifyContent="space-between"
         alignItems="center"
         mt={6}
@@ -121,7 +135,7 @@ const ProductIntro = () => {
         display={{ base: "none", md: "none", lg: "flex" }}
       >
         <Button
-          onClick={() => carouselRef.current?.previous()}
+          onClick={() => {pauseAutoPlay(); carouselRef.current?.previous(); startAutoPlay();}}
           bg="transparent"
           colorScheme="none" 
           _hover={{ bg: "#17172fff", borderColor: "white" }}
@@ -136,7 +150,7 @@ const ProductIntro = () => {
         </Button>
 
         <Button
-          onClick={() => carouselRef.current?.next()}
+          onClick={() => {pauseAutoPlay(); carouselRef.current?.next(); startAutoPlay();}}
           bg="transparent"
           p={0}
           colorScheme="none" 
@@ -150,7 +164,7 @@ const ProductIntro = () => {
         >
           <ArrowRight size={28} variant="TwoTone" color="white" />
         </Button>
-      </Flex>
+      </Flex> */}
    </Box>  
  
   );

@@ -194,6 +194,26 @@ body {
   }
 }
 
+@keyframes floatLogo {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.clientele-logo {
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+.clientele-logo:nth-child(odd) {
+  animation-direction: normal;
+  animation-delay: 0s;
+}
+
+.clientele-logo:nth-child(even) {
+  animation-direction: reverse;
+  animation-delay: 1.0s;
+}
+
 .product-intro-section {
   background: $brand-dark-gradient-invert;
 

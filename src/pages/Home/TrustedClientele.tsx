@@ -22,7 +22,7 @@ const TrustedClientele = () => {
               src={Logo}
               alt={`Logo ${index + 1}`}
               className="logo"
-              height="50px"
+              height={{base:"30px", md: "50px"}}
             />
           </Box>
         ))}
