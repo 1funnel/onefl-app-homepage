@@ -438,11 +438,11 @@ body {
 }
 
 footer.app-footer {
-  background: $brand-dark-gradient-invert;
+  background: $brand-dark-gradient;
   padding: 40px 5px;
 
   &.invert {
-    background: $brand-dark-gradient;
+    background: $brand-dark-gradient-invert;
   }
 
   .app-title {
