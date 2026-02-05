@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, GridItem } from "@chakra-ui/react";
 
-const Values = [
+const values = [
   {
     title: "Customer-First by Design",
     description:
@@ -35,15 +35,6 @@ const AboutValues = () => {
         <SimpleGrid columns={{ base: 1, sm: 2 }} gap="20px">
           <GridItem>
             <Box className="brief">
-              {/* <Box
-                color="brand.primary700"
-                fontSize="20px"
-                marginBottom="10px"
-                fontWeight="bold"
-              >
-                MEET OUR TEAM
-              </Box> */}
-
               <Box
                 className="app-title gradient-text"
                 color="brand.primary700"
@@ -79,7 +70,7 @@ const AboutValues = () => {
         mx="auto"
       >
         <SimpleGrid columns={{ base: 1, md: 5 }} spacing={{ base: 4, md: 10 }}>
-          {Values.map((val, index) => (
+          {values.map((val, index) => (
             <Box key={index}>
               <Box mb={3}>
                 <Box
@@ -99,26 +90,6 @@ const AboutValues = () => {
                   <Box fontSize="14px">{val.description}</Box>
                 </Box>
               </Box>
-
-              {/* <Box
-                width="100%"
-                height={{base: "250px", md: "350px"}}
-                bg="rgba(255, 255, 255, 0.05)"
-                borderRadius="8px"
-                overflow="hidden"
-                position="relative"
-                mb={10}
-              >
-                <Box
-                  as="img"
-                  src={team.image}
-                  alt={team.name}
-                  width="100%"
-                  height="100%"
-                  objectFit="cover"
-                  opacity={0.8}
-                />
-              </Box> */}
             </Box>
           ))}
         </SimpleGrid>
