@@ -5,6 +5,7 @@ import AboutClientele from "@/components/Navbar/About/AboutClinetele";
 import AboutFocus from "@/components/Navbar/About/AboutFocus";;
 import AboutIntro from "@/components/Navbar/About/AboutIntro";
 import AboutText from "@/components/Navbar/About/AboutText";
+import AboutValues from "@/components/Navbar/About/AboutValues";
 
 const About = () => {
   return (
@@ -26,14 +27,20 @@ const About = () => {
           <AboutFocus />
         </Container>
       </Box>
-      
+
       <Box className="section testimonials-section dark-section-invert">
+        <Container>
+          <AboutValues />
+        </Container>
+      </Box>
+      
+      <Box className="section testimonials-section dark-section">
         <Container>
           <AboutIntro />
         </Container>
       </Box>
 
-      <Box className="section product-clientele-section dark-section">
+      <Box className="section product-clientele-section dark-section-invert">
         <Container>
           <AboutText />
         </Container>
