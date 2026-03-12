@@ -13,13 +13,13 @@ const contacts = [
     icon: <Call size="28" color="#00C2FF" variant="Bulk" />,
     title: "Phone",
     description: "Available Monday to Friday, 8 AM - 5 PM.",
-    linkText: "+234 702 517 4376",
-    href: "tel:+234 702 517 4376",
+    linkText: "+234 702 517 4375",
+    href: "tel:+234 702 517 4375",
   },
   {
     icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
     title: "Visit Us",
-    description: "41, Industrial Avenue, Sabo, Yaba, Lagos State. Available for visits on Monday, Wednesday & Friday.",
+    description: "41, Industrial Avenue, Sabo, Yaba, Lagos State. Available for visits on Monday, Tuesday & Thursday.",
   },
 ];
 
