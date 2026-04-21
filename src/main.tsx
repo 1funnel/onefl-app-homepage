@@ -5,6 +5,12 @@ import "./index.scss";
 import App from "./App.tsx";
 import theme from "./theme";
 
+import Clarity from "@microsoft/clarity";
+
+if (import.meta.env.VITE_SITE_ENV === "production") {
+  Clarity.init("wenajh5n3v");
+}
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ChakraProvider theme={theme}>
