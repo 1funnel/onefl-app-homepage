@@ -8,7 +8,7 @@ import theme from "./theme";
 import Clarity from "@microsoft/clarity";
 
 if (import.meta.env.VITE_SITE_ENV === "production") {
-  Clarity.init("wenajh5n3v");
+  Clarity.init(import.meta.env.VITE_CLARITY_ID);
 }
 
 createRoot(document.getElementById("root")!).render(
