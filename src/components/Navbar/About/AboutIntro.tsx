@@ -21,10 +21,16 @@ const teamMembers = [
     designation: "Company Secretary",
     image: "/images/team-frame.svg"
   },
+  {
+    name: "Oladipupo Aina",
+    designation: "Chief Technology Officer (CTO)",
+    image: "/images/team-frame.svg"
+  },  
 ];
 
 
 const AboutIntro = () => {
+  const isOdd = teamMembers.length % 2 !== 0;
 
   return (
     <Box className="testimonials">
@@ -69,6 +75,7 @@ const AboutIntro = () => {
           <SimpleGrid 
             columns={{ base: 1, sm: 2, md: 2 }} 
             spacing={{ base: 6, md: 20 }}
+            sx={isOdd ? { "& > *:last-child": { gridColumn: "1 / -1", justifySelf: "center", width: "50%" } } : {}}
           >
             {teamMembers.map((team, index) => (
               <Box key={index}>
