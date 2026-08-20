@@ -12,9 +12,9 @@ const contacts = [
   {
     icon: <Call size="28" color="#00C2FF" variant="Bulk" />,
     title: "Phone",
-    description: "Available Monday to Friday, 8 AM - 5 PM.",
-    linkText: "+234 702 517 4375",
-    href: "tel:+234 702 517 4375",
+    description: "Available Monday to Friday, 9 AM - 5 PM.",
+    linkText: "+234 201 700 1723",
+    href: "tel:+234 201 700 1723",
   },
   {
     icon: <Messages size="28" color="#00C2FF" variant="Bulk" />,
